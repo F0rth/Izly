@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/izly_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/qrImage" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:layout_marginBottom="20.0dip" android:text="@string/show_qrcode_instruction" android:layout_below="@id/qrImage" android:layout_centerInParent="true" style="@style/izly_grey_medium" />
+</RelativeLayout>

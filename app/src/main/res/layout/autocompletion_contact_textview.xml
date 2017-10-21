@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Martin mystère"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

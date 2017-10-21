@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_item" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_unread" android:background="#ff039ec9" android:layout_width="4.0dip" android:layout_height="90.0dip" />
+    <ImageView android:id="@id/aiv_avatar" style="@style/Smoney.AsyncImageView.ListAvatar.MessageAvatar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/tv_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/general_tv_light_grey" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ff333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/general_tv_light_grey" android:id="@id/tv_body" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/sv_my_account_details" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fr.smoney.android.izly.ui.widget.ButtonRipplesView android:textColor="@color/text_selector_color_white" android:background="@drawable/bg_izly_blue_rounded" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:text="Test" />
+        <TextView android:id="@id/tv_my_account_details_updated_profile" android:visibility="gone" android:text="@string/my_account_edit_user_profile_updated_dialog_message" style="@style/Izly.TextView_Title.Blue.Header" />
+        <TextView android:text="@string/informations_general" style="@style/Izly.TextView_Title.Blue.Header" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/b_civility" android:layout_marginBottom="10.0dip" style="@style/Smoney.Subscribe.Button.Select" />
+                <EditText android:id="@id/et_first_name" android:layout_marginBottom="10.0dip" android:hint="@string/subscribe_et_first_name_hint" android:inputType="textCapWords" style="@style/Izly.EditText_Grey" />
+                <EditText android:id="@id/et_last_name" android:layout_marginBottom="10.0dip" android:hint="@string/subscribe_et_last_name_hint" android:inputType="textCapWords" style="@style/Izly.EditText_Grey" />
+                <Button android:id="@id/b_birth_date" android:hint="@string/subscribe_b_birth_date_hint" style="@style/Smoney.Subscribe.Button.Select" />
+            </LinearLayout>
+            <TextView android:text="@string/oauth_information" style="@style/Izly.TextView_Title.Blue.Header" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin">
+                <EditText android:id="@id/tv_studentcard" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/student_card_hint" android:editable="false" style="@style/Izly.EditText_Grey" />
+                <EditText android:id="@id/et_nickname" android:focusable="false" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/subscribe_et_nickname_hint" style="@style/Izly.EditText_Grey" />
+                <fr.smoney.android.izly.ui.widget.FormEditText android:id="@id/tv_phone" android:focusable="false" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/subscribe_et_phone_hint" smoney:helpMsg="@string/my_account_edit_help_msg_for_phone" smoney:validationEnabled="false" style="@style/Izly.EditText_Grey" />
+                <EditText android:id="@id/et_email_univ" android:focusable="false" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/mail_univ" android:editable="false" android:inputType="textEmailAddress" style="@style/Izly.EditText_Grey" />
+                <fr.smoney.android.izly.ui.widget.FormEditText android:id="@id/et_email" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/mail_perso" android:inputType="textEmailAddress" smoney:helpMsg="" smoney:helpMsgAllowed="false" smoney:validationEnabled="false" style="@style/Izly.EditText_Grey" />
+                <EditText android:id="@id/et_twitter" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/address_twitter" android:inputType="textEmailAddress" style="@style/Izly.EditText_Grey" />
+            </LinearLayout>
+            <TextView android:text="@string/postal_address" style="@style/Izly.TextView_Title.Blue.Header" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin">
+                <EditText android:id="@id/et_street" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/subscribe_et_street_hint" android:inputType="textCapWords" style="@style/Izly.EditText_Grey" />
+                <EditText android:id="@id/et_postal_code" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/subscribe_et_postal_code_hint" android:inputType="number" style="@style/Izly.EditText_Grey" />
+                <EditText android:id="@id/et_city" android:hint="@string/subscribe_et_city_hint" android:inputType="textCapWords" style="@style/Izly.EditText_Grey" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_country_account_edit" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:id="@id/sp_country" android:hint="@string/subscribe_et_country_hint" android:prompt="@string/subscribe_et_country_hint" style="@style/Izly.MoneyIn.Spinner.Card" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:visibility="visible" android:text="@string/complementary_information" style="@style/Izly.TextView_Title.Blue.Header" />
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin">
+                <fr.smoney.android.izly.ui.widget.FormEditText android:id="@id/et_society_code" android:focusable="false" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/profil_et_society_code_hint" android:inputType="textCapWords" smoney:helpMsg="@string/my_account_edit_help_msg_for_company_code" smoney:validationEnabled="false" style="@style/Izly.EditText_Grey" />
+                <fr.smoney.android.izly.ui.widget.FormEditText android:id="@id/et_price_code" android:focusable="false" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/profil_et_price_code_hint" android:inputType="textCapWords" smoney:helpMsg="@string/my_account_edit_help_msg_for_fare_code" smoney:validationEnabled="false" style="@style/Izly.EditText_Grey" />
+                <fr.smoney.android.izly.ui.widget.FormEditText android:id="@id/et_end_date_crous" android:focusable="false" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/profil_et_end_date_crous_hint" android:inputType="textCapWords" smoney:helpMsg="@string/my_account_edit_help_msg_for_expiration_date_crous" smoney:validationEnabled="false" style="@style/Izly.EditText_Grey" />
+            </LinearLayout>
+            <TextView android:text="@string/receive_offers" style="@style/Izly.TextView_Title.Blue.Header" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/cb_smoney_opt_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/subscribe_tv_izly_opt_in" />
+                <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/cb_partner_opt_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/subscribe_tv_ilzy_opt_in" />
+            </LinearLayout>
+            <Button android:id="@id/b_modify" android:text="@string/my_account_b_modify" style="@style/Izly.BlueButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

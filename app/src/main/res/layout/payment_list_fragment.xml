@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/izly_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/choice_payment_tv_layout" android:text="@string/choice_payement_type" android:layout_alignParentTop="true" style="@style/Izly.TextView_Title.Blue.Header" />
+    <WebView android:id="@id/bilendiAdserverView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/choice_payment_tv_layout" />
+    <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bilendiAdserverView" />
+</RelativeLayout>

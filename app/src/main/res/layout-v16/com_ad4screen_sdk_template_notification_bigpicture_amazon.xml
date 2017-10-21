@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/com_ad4screen_sdk_logo" android:padding="8.0dip" android:layout_width="64.0dip" android:layout_height="64.0dip" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="marquee" android:id="@id/com_ad4screen_sdk_title" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@android:style/TextAppearance.DeviceDefault.Medium" />
+            <TextView android:id="@id/com_ad4screen_sdk_body" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Small" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/com_ad4screen_sdk_picture" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:gravity="center" android:orientation="vertical" android:id="@id/swl_near_pro_list" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/listViewNearPro" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/nearpro_list_empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/nearpro_list_img_exclamation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xxlarge_margin" android:layout_marginBottom="@dimen/xlarge_margin" android:src="@drawable/placeholder_autour_de_moi" />
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:text="@string/handwritten_no_nearby_pro_for_this_category" style="@style/Izly.TextView_greydark" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

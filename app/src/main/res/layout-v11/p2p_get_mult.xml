@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/fill_information" style="@style/Izly.TextView_Title.Blue.Header" />
+        <Button android:id="@id/motif_spinner" android:background="@drawable/bg_square_corner_pressed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/p2p_get_mult_motif" style="@style/Smoney.EditText.GreyWithoutLayout.NotFocusable" />
+        <Spinner android:id="@id/motif_spinnerf" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:drawSelectorOnTop="true" android:prompt="@string/p2p_get_mult_motif" style="@style/Izly.MoneyIn.Spinner.Card" />
+        <View android:layout_marginTop="@dimen/activity_vertical_margin" style="@style/Izly.divider" />
+        <include layout="@layout/pay_amount_view" />
+        <Button android:textSize="12.0sp" android:textColor="@color/izly_grey" android:gravity="center|left" android:id="@id/bt_option" android:background="@drawable/izly_grey_stroke" android:paddingLeft="@dimen/default_margin" android:paddingRight="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/p2p_get_mult_option" android:drawableRight="@drawable/icon_chevron" />
+        <include layout="@layout/pay_contact_view" />
+        <fr.smoney.android.izly.ui.widget.ExpandableGridView android:gravity="center" android:id="@id/gv_recipients" android:paddingTop="@dimen/default_margin" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/default_margin" android:verticalSpacing="@dimen/default_margin" android:stretchMode="columnWidth" android:numColumns="4" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/general_tv_grey_slim" android:gravity="center_vertical" android:id="@id/p2p_get_mult_add_me" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingTop="@dimen/default_margin" android:paddingRight="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/default_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/p2p_get_mult_tv_add_me" android:drawableLeft="@drawable/pict_info" android:drawablePadding="@dimen/default_margin" />
+        <include layout="@layout/divider" />
+        <include layout="@layout/pay_message" />
+        <include layout="@layout/view_submit_button" />
+    </LinearLayout>
+</ScrollView>

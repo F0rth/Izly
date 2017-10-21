@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/check_informations" style="@style/Izly.TextView_Title.Blue.Header" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/support_type_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/support_type" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/crous_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/crous_label" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/student_id_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/student_id_label" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/expiration_date_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/expiration_label" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/opposite_date_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/opposite_label" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/opposite_motif_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/motif_label" />
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/rise_instruction" android:visibility="gone" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/rise_opposition_instruction" style="@style/Izly.TextView_grey" />
+            <LinearLayout android:orientation="vertical" android:id="@id/motif_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="@string/motif_choice_oppose_support" style="@style/Izly.TextView_grey" />
+                <Spinner android:id="@id/sp_motif" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/default_margin" android:drawSelectorOnTop="true" style="@style/Izly.MoneyIn.Spinner.Card" />
+                <View style="@style/Izly.divider" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/default_margin" android:layout_weight="1.0">
+                <IconTextView android:textSize="17.0sp" android:id="@id/b_action" android:layout_alignParentBottom="true" style="@style/Izly.BlueButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

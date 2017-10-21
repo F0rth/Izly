@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/izly_white" android:id="@id/tv_contact_header" android:background="@color/izly_blue" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/maiv_contact_avatar" style="@style/Smoney.AsyncImageView.ListAvatar" />
+            <ImageView android:id="@id/img_contact_blocked" android:visibility="gone" android:layout_width="@dimen/aiv_avatar_list_width" android:layout_height="@dimen/aiv_avatar_list_height" android:src="@drawable/contacts_iv_contact_blocked" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/general_tv_dark_grey" android:id="@id/tv_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

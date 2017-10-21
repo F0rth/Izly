@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_home_bar_action" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:layout_alignParentTop="true">
+        <LinearLayout android:id="@id/payView" android:background="@color/izly_blue_light" style="@style/Izly.Home.MenuItem">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:src="@drawable/icon_payer" />
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginTop="16.0dip" android:layout_marginBottom="20.5dip" android:text="@string/qr_code_pay" style="@style/Izly.Home.MainButtonText" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/reloadView" android:background="@color/izly_blue_over" style="@style/Izly.Home.MenuItem">
+            <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:src="@drawable/icon_reload" />
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:duplicateParentState="true" android:layout_marginTop="16.0dip" android:layout_marginBottom="20.5dip" android:text="@string/reload" style="@style/Izly.Home.MainButtonText" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/bonPlansView" android:background="@color/izly_orange_over" style="@style/Izly.Home.MenuItem">
+            <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:src="@drawable/icon_good_plan" />
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:duplicateParentState="true" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/bon_plans" style="@style/Izly.Home.MainButtonText" />
+        </LinearLayout>
+    </LinearLayout>
+    <WebView android:id="@id/bilendiAdserverView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/networkstate_layout" />
+    <include android:id="@id/account_balance" layout="@layout/account_balance" />
+</LinearLayout>

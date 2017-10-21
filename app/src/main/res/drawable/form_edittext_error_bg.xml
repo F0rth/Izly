@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/form_editext_error_pressed_border" />
+                </shape>
+            </item>
+            <item android:left="@dimen/edittext_border_normal_padding" android:top="@dimen/edittext_border_normal_padding" android:right="@dimen/edittext_border_normal_padding" android:bottom="@dimen/edittext_border_normal_padding">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/form_editext_error_pressed_bg" />
+                    <padding android:left="@dimen/edittext_inside_padding_left" android:right="@dimen/edittext_inside_padding_right" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/form_editext_error_focused_border" />
+                </shape>
+            </item>
+            <item android:left="@dimen/edittext_border_focused_padding" android:top="@dimen/edittext_border_focused_padding" android:right="@dimen/edittext_border_focused_padding" android:bottom="@dimen/edittext_border_focused_padding">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/form_editext_error_focused_bg" />
+                    <padding android:left="@dimen/edittext_inside_padding_left" android:right="@dimen/edittext_inside_padding_right" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/form_editext_error_normal_border" />
+                </shape>
+            </item>
+            <item android:left="@dimen/edittext_border_normal_padding" android:top="@dimen/edittext_border_normal_padding" android:right="@dimen/edittext_border_normal_padding" android:bottom="@dimen/edittext_border_normal_padding">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/form_editext_error_normal_bg" />
+                    <padding android:left="@dimen/edittext_inside_padding_left" android:right="@dimen/edittext_inside_padding_right" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tiers_input_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/tiers_info_money_in" style="@style/Izly.TextView_grey" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin">
+        <fr.smoney.android.izly.ui.widget.ContactAutoCompleteTextView android:id="@id/atv_recipient" android:hint="@string/mail_hint" android:singleLine="true" android:imeOptions="actionNext" style="@style/Izly.EditText_Grey" />
+        <IconTextView android:textColor="@color/izly_grey" android:layout_gravity="center|right" android:id="@id/iv_choose_contact" android:padding="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_ico" />
+    </FrameLayout>
+</LinearLayout>

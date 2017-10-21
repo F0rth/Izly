@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/consult_modify_supports" style="@style/Izly.TextView_Title.Blue.Header" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_supports_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/placeholder_support" />
+        <TextView android:gravity="center" android:layout_marginTop="80.0dip" android:text="@string/any_supports" style="@style/Izly.TextView_greydark" />
+    </LinearLayout>
+    <ListView android:id="@id/listView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

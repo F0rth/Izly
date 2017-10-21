@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/contact_us_for_question" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/contact_us_for_question" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_greydark" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/contact_us_for_help" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_greydark" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_toLeftOf="@id/contact_us_or" android:layout_alignBottom="@id/contact_us_or" style="@style/Izly.divider" />
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/contact_us_or" android:text="@string/contact_us_or" android:layout_centerHorizontal="true" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_blue_light" />
+            <View android:layout_toRightOf="@id/contact_us_or" android:layout_alignBottom="@id/contact_us_or" style="@style/Izly.divider" />
+        </RelativeLayout>
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/contact_us_personal_info" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/contact_us_personal_info" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_greydark" />
+        <EditText android:id="@id/contact_us_mail_input" android:layout_marginBottom="10.0dip" android:hint="@string/contact_us_mail_hint" style="@style/Izly.EditText_Grey" />
+        <EditText android:id="@id/contact_us_mobile_number_input" android:layout_marginBottom="10.0dip" android:hint="@string/contact_us_mobile_number_hint" style="@style/Izly.EditText_Grey" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/contact_us_crous" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/contact_us_crous" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_greydark" />
+        <Spinner android:id="@id/contact_us_crous_spinner" android:layout_marginTop="@dimen/activity_vertical_margin" style="@style/Izly.MoneyIn.Spinner.Card" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/contact_us_demand" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/contact_us_demand" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_greydark" />
+        <EditText android:gravity="center|left|top" android:id="@id/contact_us_demand_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="5" android:scrollHorizontally="false" android:inputType="textMultiLine" style="@style/Izly.EditText_Grey" />
+        <IconButton android:enabled="false" android:id="@id/contact_us_send_btn" android:layout_marginLeft="0.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/contact_us_send" style="@style/Izly.BlueButton" />
+    </LinearLayout>
+</ScrollView>

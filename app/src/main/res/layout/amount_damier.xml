@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/amount" style="@style/Izly.TextView_grey" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ToggleButton android:id="@id/tb_amount_1" android:visibility="gone" android:layout_weight="1.0" style="@style/Izly.ToggleButton_Amount" />
+            <ToggleButton android:id="@id/tb_amount_2" android:visibility="gone" android:layout_weight="1.0" style="@style/Izly.ToggleButton_Amount" />
+            <ToggleButton android:id="@id/tb_amount_3" android:visibility="gone" android:layout_weight="1.0" style="@style/Izly.ToggleButton_Amount" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ToggleButton android:id="@id/tb_amount_4" android:visibility="gone" android:layout_weight="1.0" style="@style/Izly.ToggleButton_Amount" />
+            <ToggleButton android:id="@id/tb_amount_5" android:visibility="gone" style="@style/Izly.ToggleButton_Amount" />
+            <ToggleButton android:id="@id/tb_amount_6" android:textOn="@string/money_in_cb_rb_other_amount" android:textOff="@string/money_in_cb_rb_other_amount" android:layout_weight="1.0" style="@style/Izly.ToggleButton_Amount" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/activity_vertical_margin" style="@style/Izly.divider" />
+</LinearLayout>

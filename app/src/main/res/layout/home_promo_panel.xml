@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_home_sliding_bg" android:background="#aa000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ev_home_framelayout" android:background="@android:color/background_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/home_promo_panel_content_default_height">
+        <ListView android:id="@id/sldrawer_home_content" android:background="@android:color/background_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:gravity="center" android:id="@id/ev_home_img_promo" android:background="@android:color/background_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/handwritten_no_promotion_for_nearby_pro" smoney:customFontPath="fonts/ardleyshandregular.ttf" style="@style/Smoney.Generic.HandWrittenTextView.EmptyListView" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_ev_home_promo" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

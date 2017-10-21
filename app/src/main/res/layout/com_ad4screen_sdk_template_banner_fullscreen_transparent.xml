@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/com_ad4screen_sdk_webview" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:layout_gravity="center|right|top" android:id="@id/com_ad4screen_sdk_closebutton" android:background="@drawable/com_ad4screen_sdk_closebutton" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" />
+</FrameLayout>

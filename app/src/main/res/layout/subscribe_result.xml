@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/Smoney.PhoneValidation.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:src="@drawable/subscribe_result_iv_logo" style="@style/Smoney.PhoneValidation.ImageView" />
+    <View style="@style/Smoney.PhoneValidation.PaddingView" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_square_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Smoney.CompleteSubscription.TextZoneInfo">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/pict_text_info" android:contentDescription="@string/content_description_none" />
+        <TextView android:text="@string/subscribe_result_sms_sent" style="@style/Smoney.PhoneValidation.TextView" />
+    </LinearLayout>
+</LinearLayout>

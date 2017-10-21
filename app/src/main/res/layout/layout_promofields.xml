@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/label" android:text="@string/promotional_offers_details_website" style="@style/Smoney.Generic.TextView.Label" />
+        <TextView android:textColor="@color/nearpro_dark_grey" android:id="@id/value" style="@style/Smoney.Generic.TextView.Value" />
+    </LinearLayout>
+    <View style="@style/Smoney.Generic.View.Separator" />
+</LinearLayout>

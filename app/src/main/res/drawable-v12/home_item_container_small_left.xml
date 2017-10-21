@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/home_general_item_corner_radius" android:bottomLeftRadius="@dimen/home_general_item_corner_radius" />
+                    <solid android:color="@color/home_item_border_grey" />
+                </shape>
+            </item>
+            <item android:right="@dimen/home_general_item_border">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/home_general_item_corner_radius" android:bottomLeftRadius="@dimen/home_general_item_corner_radius" />
+                    <size android:height="@dimen/home_small_item_height" android:width="@dimen/home_small_item_width" />
+                    <solid android:color="@color/bg_home_item_focused" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/home_general_item_corner_radius" android:bottomLeftRadius="@dimen/home_general_item_corner_radius" />
+                    <solid android:color="@color/home_item_border_grey" />
+                </shape>
+            </item>
+            <item android:right="@dimen/home_general_item_border">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/home_general_item_corner_radius" android:bottomLeftRadius="@dimen/home_general_item_corner_radius" />
+                    <size android:height="@dimen/home_small_item_height" android:width="@dimen/home_small_item_width" />
+                    <solid android:color="@color/bg_home_item_pressed" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/home_general_item_corner_radius" android:bottomLeftRadius="@dimen/home_general_item_corner_radius" />
+                    <solid android:color="@color/home_item_border_grey" />
+                </shape>
+            </item>
+            <item android:right="@dimen/home_general_item_border">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/home_general_item_corner_radius" android:bottomLeftRadius="@dimen/home_general_item_corner_radius" />
+                    <size android:height="@dimen/home_small_item_height" android:width="@dimen/home_small_item_width" />
+                    <solid android:color="@color/bg_home_item_normal" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

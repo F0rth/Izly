@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.smoney.android.izly.REC">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+
+    <uses-permission android:name=".MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name=".permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <permission
+        android:name=".MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name=".permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+
+    <uses-library android:name="com.google.android.maps" />
+
+    <permission
+        android:name="fr.smoney.android.izly.REC.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="fr.smoney.android.izly.REC.provider.A4S_READ_DATABASE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="fr.smoney.android.izly.REC.provider.A4S_WRITE_DATABASE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="fr.smoney.android.izly.REC.permission.C2D_MESSAGE" />
+    <permission
+        android:name="fr.smoney.android.izly.REC.permission.A4S_SEND"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="fr.smoney.android.izly.REC.permission.A4S_SEND" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="fr.smoney.android.izly.SmoneyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_application"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Izly">
+        <receiver
+            android:name="com.ad4screen.sdk.GCMHandler"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="fr.smoney.android.izly.REC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="fr.smoney.android.izly.INTEG" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="fr.smoney.android.izly.provider.FileContentProvider"
+            android:authorities=".provider.FileContentProvider" />
+
+        <service android:name="fr.smoney.android.izly.data.service.SmoneyService" />
+        <service android:name="fr.smoney.android.izly.data.service.ActivityLauncherService" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <receiver
+            android:name="fr.smoney.android.izly.data.gcm.GCMMessageReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="fr.smoney.android.izly.data.gcm.GCMNotificationsDispatcherReceiver">
+            <intent-filter>
+                <action android:name=".notifications.NOTIFICATION_DISPATCHER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="fr.smoney.android.izly.data.gcm.GCMNotificationOutsideApplicationReceiver">
+            <intent-filter>
+                <action android:name=".notifications.NOTIFICATION_DISPATCHED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.ezeeworld.b4s.android.sdk.monitor.MonitoringManager"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ezeeworld.b4s.android.sdk.monitor.B4S_ENSURE_SCANNING" />
+                <action android:name="com.ezeeworld.b4s.android.sdk.monitor.B4S_QUERY_SCHEDULE" />
+                <action android:name="com.ezeeworld.b4s.android.sdk.monitor.B4S_SCHEDULE_RESULT" />
+                <action android:name="com.ezeeworld.b4s.android.sdk.monitor.B4S_QUERY_VERSION" />
+                <action android:name="com.ezeeworld.b4s.android.sdk.monitor.B4S_REPORT_VERSION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ezeeworld.b4s.android.sdk.monitor.ScanService"
+            android:exported="false" />
+        <service
+            android:name="com.ezeeworld.b4s.android.sdk.monitor.InteractionService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ezeeworld.b4s.android.sdk.monitor.B4S_OBSERVATIONS" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ezeeworld.b4s.android.sdk.notifications.NotificationService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.ezeeworld.b4s.android.sdk.monitor.WebViewInteractionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:noHistory="true" />
+        <receiver android:name="com.ezeeworld.b4s.android.sdk.monitor.SystemEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_USER_PRESENT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.ad4screen.sdk.A4SService"
+            android:label="A4S Service"
+            android:process=":A4SService">
+            <meta-data
+                android:name="com.ad4screen.partnerid"
+                android:value="@string/accengage_partner_id" />
+            <meta-data
+                android:name="com.ad4screen.privatekey"
+                android:value="@string/accengage_private_key" />
+            <meta-data
+                android:name="com.ad4screen.logging"
+                android:value="false" />
+            <meta-data
+                android:name="com.ad4screen.senderid"
+                android:value="@string/accengage_sender_id" />
+        </service>
+
+        <activity
+            android:name="fr.smoney.android.izly.ui.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.IzlyNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="fr.smoney.android.LAUNCH_SMONEY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_web"
+                    android:pathPrefix="@string/payment_path_prefix_web"
+                    android:scheme="@string/payment_schemes_web" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_normal"
+                    android:scheme="@string/payment_schemes_normal" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_web"
+                    android:pathPrefix="@string/payment_path_prefix_web2"
+                    android:scheme="@string/payment_schemes_web" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_web"
+                    android:pathPrefix="@string/payment_path_prefix_web3"
+                    android:scheme="@string/payment_schemes_web" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_web"
+                    android:pathPrefix="@string/payment_path_prefix_web4"
+                    android:scheme="@string/payment_schemes_web" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_web"
+                    android:pathPrefix="@string/payment_path_prefix_web5"
+                    android:scheme="@string/payment_schemes_web" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_web"
+                    android:pathPrefix="@string/payment_path_prefix_web6"
+                    android:scheme="@string/payment_schemes_web" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_web"
+                    android:pathPrefix="@string/payment_path_prefix_web7"
+                    android:scheme="@string/payment_schemes_web" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/payment_host_web"
+                    android:pathPrefix="@string/payment_path_prefix_web8"
+                    android:scheme="@string/payment_schemes_web" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="MKG"
+                    android:scheme="@string/scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fr.smoney.android.izly.ui.PhoneNonValidatedActivity"
+            android:label="@string/subscribe_result_title"
+            android:logo="@drawable/logo"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:logo="@drawable/icon_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Izly" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PPayActivity"
+            android:label="@string/p2p_pay_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.QRCodeActivity"
+            android:label="@string/qr_code_pay_izly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ReloadActivity"
+            android:label="@string/reload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MyRequestActivity"
+            android:label="@string/my_request"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.CGUSmoneyActivity"
+            android:label="@string/good_plan"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="terms" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInTiersConfirmActivity"
+            android:label="@string/tiers_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInTiersResultActivity"
+            android:label="@string/tiers_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PaymentInfoActivity"
+            android:label="@string/reload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ListSupportActivity"
+            android:label="@string/my_supports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.HistoryActivity"
+            android:label="@string/menu_entries_transctions_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.DetailSupportActivity"
+            android:label="@string/my_supports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PPayConfirmActivity"
+            android:label="@string/p2p_pay_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PPayResultActivity"
+            android:label="@string/p2p_pay_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInCbAndPayActivity"
+            android:label="@string/money_in_cb_and_pay_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInCbAndPayConfirmActivity"
+            android:label="@string/money_in_cb_and_pay_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInCbAndPayResultActivity"
+            android:label="@string/money_in_cb_and_pay_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.TransactionListDetailsActivity"
+            android:label="@string/transaction_list_details_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInActivity"
+            android:label="@string/money_in_cb_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInCbConfirmActivity"
+            android:label="@string/money_in_cb_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInCbResultActivity"
+            android:label="@string/money_in_cb_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.SubscribeActivity"
+            android:label="@string/subscribe_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.SubscribeResultActivity"
+            android:label="@string/subscribe_result_title"
+            android:logo="@drawable/logo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.WebViewHelperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.SubscribeConfirmActivity"
+            android:label="@string/subscribe_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PhoneValidationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.IzlyNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="SBSCR"
+                    android:scheme="@string/scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fr.smoney.android.izly.ui.PhoneValidationResultActivity"
+            android:label="@string/phone_validation_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyOutTransferActivity"
+            android:label="@string/money_out_transfer_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyOutTransferConfirmActivity"
+            android:label="@string/money_out_transfer_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyOutTransferResultActivity"
+            android:label="@string/money_out_transfer_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetDetailsActivity"
+            android:label="@string/p2p_get_mult_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetMultActivity"
+            android:label="@string/p2p_get_mult_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetMultConfirmActivity"
+            android:label="@string/p2p_get_mult_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetMultResultActivity"
+            android:label="@string/p2p_get_mult_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PPayRequestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PPayRequestConfirmActivity"
+            android:label="@string/p2p_pay_request_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PPayRequestResultActivity"
+            android:label="@string/p2p_pay_request_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInCbAndPayRequestConfirmActivity"
+            android:label="@string/money_in_cb_and_pay_request_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInCbAndPayRequestResultActivity"
+            android:label="@string/money_in_cb_and_pay_request_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ContactsActivity"
+            android:label="@string/my_account_contacts_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ContactDetailsActivity"
+            android:label="@string/my_account_contact_details_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.CbListActivity"
+            android:label="@string/cb_list_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.CbAddActivity"
+            android:label="@string/cb_add_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.CbEditActivity"
+            android:label="@string/cb_edit_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.AddTransferAccountActivity"
+            android:label="@string/add_transfer_account_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.AddChangeTransferAccountResultActivity"
+            android:label="@string/menu_entries_my_account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.RetrievePasswordSecretQuestionActivity"
+            android:label="@string/retrieve_password_secret_question_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.RetrievePasswordRequestActivity"
+            android:label="@string/retrieve_password_request_title"
+            android:logo="@drawable/logo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.RetrievePasswordSavedActivity"
+            android:label="@string/retrieve_password_saved_title"
+            android:logo="@drawable/logo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.RetrievePasswordBlockedActivity"
+            android:label="@string/retrieve_password_blocked_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.RetrievePasswordInitiatePasswordRecoveryActivity"
+            android:label="@string/retrieve_password_initiate_password_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ChangePasswordActivity"
+            android:label="@string/change_password_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ChangePasswordResultActivity"
+            android:label="@string/change_password_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ChangeConfidentialitySettingsActivity"
+            android:label="@string/change_confidentiality_settings_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.BlockAccountActivity"
+            android:label="@string/block_account_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.BlockAccountResultActivity"
+            android:label="@string/block_account_result_title"
+            android:logo="@drawable/logo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.AboutActivity"
+            android:label="@string/about_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.NearProListActivity"
+            android:label="@string/near_pro_info_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.NearProCategoryActivity"
+            android:label="@string/near_pro_info_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.NearProMapActivity"
+            android:label="@string/near_pro_map_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PromotionalOfferDetails"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PromotionalOfferListActivity"
+            android:label="@string/promotional_offers_list_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PasswordChangedActivity"
+            android:label="@string/password_changed_title"
+            android:logo="@drawable/logo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.CGUActivity"
+            android:label="@string/cgu_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.InviteRequestActivity"
+            android:label="@string/invite_request_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.CompleteMyAddressActivity"
+            android:label="@string/complete_my_address_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.HelpActivity"
+            android:label="@string/contactus_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="faq" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fr.smoney.android.izly.ui.CounterDetailActivity"
+            android:label="@string/counter_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.GoodDealsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ServicesPotCommunActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ServicesMoneyFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.DealsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.DealsSubscriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ServicesSynintraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ServicesWingitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.CompleteAccountWrapperActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Bpce.Translucent.NoTitleBar" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.CompleteSubscriptionActivity"
+            android:label="@string/complete_subscription_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetChoiceActivity"
+            android:label="@string/p2p_get_mult_choice_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetSimpleActivity"
+            android:label="@string/p2p_get_simple_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetSimpleConfirmActivity"
+            android:label="@string/p2p_get_simple_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetSimpleResultActivity"
+            android:label="@string/p2p_get_simple_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetMultMotifActivity"
+            android:label="@string/p2p_get_mult_motif_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.P2PGetMultOptionActivity"
+            android:label="@string/p2p_get_mult_option_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PreAuthorizePaymentActivity"
+            android:label="@string/preauthorize_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PreAuthorizePaymentConfirmActivity"
+            android:label="@string/preauthorize_confirm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PreAuthorizePaymentResultActivity"
+            android:label="@string/preauthorize_result_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PreAuthorizePaymentDetailsActivity"
+            android:label="@string/preauthorize_details_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="scanpay.it.ScanPayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="scanpay.it.SPValidationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.WelcomeActivity"
+            android:label="@string/preauthorize_details_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.NearProActivity"
+            android:label="@string/near_pro_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PreAskSendMoneyActivity"
+            android:label="@string/title_activity_pre_ask_send_money"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PreSettingsActivity"
+            android:label="@string/title_activity_pre_settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.PreMyAccountDetailsActivity"
+            android:label="@string/title_activity_pre_my_account_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.AllContactsActivity"
+            android:label="@string/title_activity_all_contacts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.OffersAndServicesActivity"
+            android:label="@string/title_activity_offers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInVmeResult"
+            android:label="@string/title_activity_reload_vme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInSepaConfirmActivity"
+            android:label="@string/reload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.MoneyInSepaResultActivity"
+            android:label="@string/reload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.activity.CitySelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWingit"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.activity.CityEventActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWingit" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.activity.DownloadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWingit" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWingit" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.activity.EventDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWingit" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.activity.FilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWingit" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/maps_api_key" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8a57a2a51a0e4bc81b0a21d44119948a4fd624d3" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="fr.smoney.android.izly.data.network.ConnectivityBroadcastReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="fr.smoney.android.izly.ui.activity.GetCityLocationActivity" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ActivationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ActivationStepOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ActivationStepTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ActivationStepTwoConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ActivationStepThreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ActivationCGUActivity"
+            android:label="@string/cgu_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ActivationAddPhoneNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fr.smoney.android.izly.ui.ActivationPhoneValidationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeTouchListenerTestActivity" />
+        <activity android:name="com.nhaarman.listviewanimations.itemmanipulation.dragdrop.DynamicListViewTestActivity" />
+
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="fr.smoney.android.izly.REC.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+
+        <receiver
+            android:name="com.ad4screen.sdk.ReferrerHandler"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ad4screen.sdk.A4SPopup"
+            android:taskAffinity=""
+            android:theme="@style/com_ad4screen_sdk_theme_popup" />
+        <activity
+            android:name="com.ad4screen.sdk.A4SInterstitial"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@style/com_ad4screen_sdk_theme_interstitial" />
+
+        <receiver
+            android:name="com.ad4screen.sdk.A4SIDFVHandler"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ad4screen.sdk.intent.action.QUERY" />
+                <category android:name="com.ad4screen.sdk.intent.category.ANONYM_ID" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.ad4screen.sdk.provider.A4SProvider"
+            android:authorities="fr.smoney.android.izly.REC.ad4screen.provider"
+            android:process=":A4SService"
+            android:readPermission="fr.smoney.android.izly.REC.provider.A4S_READ_DATABASE"
+            android:writePermission="fr.smoney.android.izly.REC.provider.A4S_WRITE_DATABASE" />
+        <provider
+            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
+            android:authorities="fr.smoney.android.izly.REC.google_measurement_service"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Thin &amp; " app:typeface="roboto_thin" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thin Italic" app:typeface="roboto_thin_italic" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Light &amp; " app:typeface="roboto_light" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Light Italic" app:typeface="roboto_light_italic" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Regular &amp; " app:typeface="roboto_regular" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Italic" app:typeface="roboto_italic" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Medium &amp; " app:typeface="roboto_medium" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Italic" app:typeface="roboto_medium_italic" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Bold &amp; " app:typeface="roboto_bold" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bold Italic" app:typeface="roboto_bold_italic" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Black &amp; " app:typeface="roboto_black" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Black Italic" app:typeface="roboto_black_italic" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Condensed &amp; " app:typeface="roboto_condensed" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Condensed Italic" app:typeface="roboto_condensed_italic" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Bold Condensed &amp; " app:typeface="roboto_condensed_bold" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bold Condensed Italic" app:typeface="roboto_condensed_bold_italic" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Slab Thin" app:typeface="robotoslab_thin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Slab Light" app:typeface="robotoslab_light" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Slab Regular" app:typeface="robotoslab_regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roboto Slab Bold" app:typeface="robotoslab_bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

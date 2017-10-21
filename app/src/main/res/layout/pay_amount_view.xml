@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/amount" style="@style/Izly.TextView_grey" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin">
+        <EditText android:id="@id/et_amount" android:singleLine="true" android:maxLength="@integer/general_comment_max_length" style="@style/Izly.EditText_Grey" />
+        <TextView android:textStyle="bold" android:layout_gravity="center|right" android:id="@id/tv_amount_symbol" android:paddingLeft="@dimen/default_margin" android:paddingRight="@dimen/default_margin" android:text="€" style="@style/Izly.TextView_grey" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_margin">
+        <ImageView android:id="@id/p2p_pict_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:src="@drawable/pict_info" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/p2p_get_info" android:visibility="gone" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="@string/p2p_get_tv_information" style="@style/Izly.TextView_grey" />
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/activity_vertical_margin" style="@style/Izly.divider" />
+</LinearLayout>

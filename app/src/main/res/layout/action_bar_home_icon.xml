@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pict_slidingmenu" android:scaleType="center" />
+    <View android:id="@id/v_home_badges" android:background="@drawable/home_iv_badge" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="3.0dip" style="@style/Smoney.Home.FrameLayout.Badge" />
+</FrameLayout>

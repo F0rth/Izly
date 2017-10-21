@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_center_layout_padding_top">120.0dip</dimen>
+    <dimen name="home_general_item_height">357.0dip</dimen>
+    <dimen name="home_general_item_width">357.0dip</dimen>
+    <dimen name="home_secundary_item_height">242.0dip</dimen>
+    <dimen name="home_secundary_item_width">238.0dip</dimen>
+    <dimen name="home_sliding_drawer_content_height">480.0dip</dimen>
+    <dimen name="home_sliding_drawer_header_height">100.0dip</dimen>
+    <dimen name="home_small_item_height">207.0dip</dimen>
+    <dimen name="home_small_item_width">178.0dip</dimen>
+</resources>

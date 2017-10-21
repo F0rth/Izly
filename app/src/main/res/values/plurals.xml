@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="home_news_feed_payment_money_demand_mult">
+        <item quantity="other">You have requested %2$s to  &lt;b>%1$s&lt;/b> and to %3$d other people</item>
+        <item quantity="one">You have requested %2$s to  &lt;b>%1$s&lt;/b> and to %3$d another person</item>
+    </plurals>
+    <plurals name="home_news_feed_payment_money_demand_mult_without_amount">
+        <item quantity="other">You have sent a request for money to  &lt;b>%1$s&lt;/b> and to %2$s other people</item>
+        <item quantity="one">You have sent a request for money to  &lt;b>%1$s&lt;/b> and to %2$s another person</item>
+    </plurals>
+    <plurals name="home_news_feed_sameday_hour">
+        <item quantity="other">%1$s hours ago</item>
+        <item quantity="one">%1$s hour ago</item>
+    </plurals>
+    <plurals name="home_news_feed_sameday_minutes">
+        <item quantity="other">%1$s minutes ago</item>
+        <item quantity="zero">%1$s minute ago</item>
+        <item quantity="one">%1$s minute ago</item>
+    </plurals>
+    <plurals name="my_account_tv_number_of_contacts">
+        <item quantity="other">Showing of %d contacts</item>
+        <item quantity="zero">No contacts</item>
+        <item quantity="one">Showing of %d contact</item>
+    </plurals>
+    <plurals name="p2p_get_list_to_and_others">
+        <item quantity="other">To: %1$s and %2$d other</item>
+        <item quantity="one">To: %1$s and %2$d other</item>
+    </plurals>
+    <plurals name="p2p_get_mult_details_tv_number_of_cancelled">
+        <item quantity="other">%d cancelled</item>
+        <item quantity="one">%d cancelled</item>
+    </plurals>
+    <plurals name="p2p_get_mult_details_tv_number_of_payed">
+        <item quantity="other">%d paid</item>
+        <item quantity="one">%d paid</item>
+    </plurals>
+    <plurals name="p2p_get_mult_details_tv_number_of_refused">
+        <item quantity="other">%d refused</item>
+        <item quantity="one">%d refused</item>
+    </plurals>
+    <plurals name="p2p_get_mult_details_tv_request_status_cancelled">
+        <item quantity="other">Request not sent to %1$d recipients</item>
+        <item quantity="one">Request not sent to %1$d recipient</item>
+    </plurals>
+    <plurals name="p2p_get_mult_details_tv_request_status_done">
+        <item quantity="other">%1$d recipients will receive the request</item>
+        <item quantity="zero">No recipient will receive the request</item>
+        <item quantity="one">%1$d recipient will receive the request</item>
+    </plurals>
+</resources>

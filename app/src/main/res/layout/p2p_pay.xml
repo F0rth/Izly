@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_view_pay" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    <ScrollView android:id="@id/sv_content_view_pay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_pay_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/fill_information" style="@style/Izly.TextView_Title.Blue.Header" />
+            <include layout="@layout/account_balance" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_pay_recipient" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/pay_contact_view" />
+                <include layout="@layout/locate_shop_view" />
+                <include layout="@layout/pay_amount_view" />
+                <include layout="@layout/pay_message" />
+            </LinearLayout>
+            <include layout="@layout/view_submit_button" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_request_status" style="@style/Smoney.ConfirmResult.TextView.StatusBar.Paid" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/confirm_result_recipient_info" />
+        <LinearLayout android:id="@id/ll_commission" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="30.0dip">
+            <TextView style="@style/Smoney.ConfirmResult.TextView.BlueLabel.CommissionAmount" />
+            <TextView android:textSize="15.0sp" android:id="@id/tv_commission" style="@style/Smoney.ConfirmResult.TextView.Value" />
+        </LinearLayout>
+        <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/confirm_result_tv_amount" />
+        <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/date" />
+        <include layout="@layout/confirm_result_message_other" />
+        <include layout="@layout/confirm_result_message_me" />
+        <include layout="@layout/layout_commission_info" />
+    </LinearLayout>
+</ScrollView>

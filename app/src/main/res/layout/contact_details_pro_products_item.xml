@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/default_list_item_bg" android:layout_width="fill_parent" android:layout_height="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/aiv_product" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/product_placeholder" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/general_tv_dark_grey" android:ellipsize="end" android:id="@id/tv_product_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" android:text="title product" android:singleLine="true" android:maxLength="17" android:layout_toRightOf="@id/aiv_product" android:layout_alignParentTop="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/general_tv_light_grey" android:id="@id/tv_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="price product" android:layout_toRightOf="@id/aiv_product" android:layout_below="@id/tv_product_title" />
+    <fr.smoney.android.izly.ui.widget.ListItemButton android:id="@id/bt_product_pay" android:layout_marginRight="10.0dip" android:text="@string/contact_details_pro_catalog_pay_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Smoney.NearProListButton.Blue" />
+</RelativeLayout>

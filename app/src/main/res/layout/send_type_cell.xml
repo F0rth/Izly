@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/izly_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/large_margin" android:layout_marginTop="@dimen/vertical_margin" android:layout_marginRight="@dimen/large_margin" android:src="@drawable/picto_demande_simple" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/payment_tv_layout" android:paddingLeft="0.0dip" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/logo" android:layout_centerVertical="true">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="20.0sp" android:textColor="@color/izly_grey_dark" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" android:layout_marginBottom="20.0dip" android:text="@string/menu_send_ask_money" smoney:customFontPath="fonts/HelveticaLight.ttf" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textColor="@color/izly_grey" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_margin" android:text="@string/lorem" smoney:customFontPath="fonts/HelveticaLight.ttf" />
+    </LinearLayout>
+</RelativeLayout>

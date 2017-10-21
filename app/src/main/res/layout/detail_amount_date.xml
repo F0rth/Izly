@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/amount" />
+    <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_commission" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/confirm_result_tv_commission" />
+    <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/date" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" style="@style/Smoney.UpdateMyAddress.ViewSeparator" />
+        <EditText android:id="@id/complete_address_et_street" android:hint="@string/subscribe_et_street_hint" android:inputType="textFilter|textCapWords|textNoSuggestions" style="@style/Smoney.UpdateMyAddress.EditText" />
+        <EditText android:id="@id/complete_address_et_postal_code" android:hint="@string/subscribe_et_postal_code_hint" android:inputType="number" style="@style/Smoney.UpdateMyAddress.EditText" />
+        <EditText android:id="@id/complete_address_et_city" android:hint="@string/subscribe_et_city_hint" android:inputType="textFilter|textCapWords|textNoSuggestions" style="@style/Smoney.UpdateMyAddress.EditText" />
+        <Spinner android:id="@id/sp_country" android:layout_marginBottom="10.0dip" android:hint="@string/subscribe_et_country_hint" android:prompt="@string/subscribe_et_country_hint" style="@style/Smoney.UpdateMyAddress.Button.Select" />
+        <include layout="@layout/layout_separation" />
+        <Button android:layout_gravity="bottom" android:id="@id/complete_address_b_update" android:layout_marginTop="10.0dip" android:text="@string/complete_my_adress_bt_validate" style="@style/Smoney.Button.Blue.FillParent" />
+    </LinearLayout>
+</ScrollView>

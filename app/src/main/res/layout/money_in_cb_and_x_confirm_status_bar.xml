@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_square_corner" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/aiv_recipient_photo" android:layout_width="@dimen/aiv_avatar_main_width" android:layout_height="@dimen/aiv_avatar_main_height" android:layout_marginRight="15.0dip" android:src="@drawable/detail_aiv_avatar_money_in" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/general_tv_dark_grey" android:id="@id/tv_money_operation_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/money_in_cb_and_x_confirm_tv_money_in_cb_amount_label" android:layout_toRightOf="@id/aiv_recipient_photo" android:layout_alignParentTop="true" />
+    <TextView android:id="@id/tv_money_operation_alias" android:layout_toRightOf="@id/aiv_recipient_photo" android:layout_below="@id/tv_money_operation_info" style="@style/Smoney.ConfirmResult.TextView.RecipientName" />
+    <TextView android:id="@id/tv_money_operation_hint" android:layout_toRightOf="@id/aiv_recipient_photo" android:layout_below="@id/tv_money_operation_alias" style="@style/Smoney.ConfirmResult.TextView.RecipientId" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/services_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_launcher" android:contentDescription="row" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:id="@id/services_label_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="text" android:layout_toRightOf="@id/services_icon" />
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/services_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:text="text" android:layout_toRightOf="@id/services_icon" android:layout_below="@id/services_label_title" />
+    <TextView android:textSize="10.0sp" android:id="@id/services_label_bis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="text" android:layout_toRightOf="@id/services_icon" android:layout_below="@id/services_label" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/fill_information" style="@style/Izly.TextView_Title.Blue.Header" />
+        <include layout="@layout/pay_contact_view" />
+        <View style="@style/Izly.divider" />
+        <include layout="@layout/pay_amount_view" />
+        <include layout="@layout/pay_message" />
+        <include layout="@layout/view_submit_button" />
+    </LinearLayout>
+</ScrollView>

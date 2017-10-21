@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Smoney.BlankListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_date" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" />
+    <TextView android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/tv_date" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/tv_amount" android:paddingRight="?android:scrollbarSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/tv_date" android:layout_alignParentRight="true" />
+    <fr.smoney.android.izly.ui.widget.QuickActionsAsyncImageView android:id="@id/aiv_photo" android:layout_below="@id/tv_time" android:layout_alignParentLeft="true" style="@style/Smoney.AsyncImageView.ListAvatar" />
+    <TextView android:id="@id/tv_status" android:paddingRight="?android:scrollbarSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_amount" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/tv_status" android:layout_toRightOf="@id/aiv_photo" android:layout_below="@id/tv_time" />
+    <TextView android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/tv_status" android:layout_below="@id/tv_name" android:layout_alignLeft="@id/tv_name" />
+</RelativeLayout>

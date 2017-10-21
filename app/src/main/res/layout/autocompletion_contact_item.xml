@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contact_smoney" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icn_statusbar" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/contact_smoney" android:layout_alignParentLeft="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/general_tv_dark_grey" android:id="@id/contact_name" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/general_tv_blue" android:id="@id/contact_info" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

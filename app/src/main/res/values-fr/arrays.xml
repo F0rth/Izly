@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="change_confidentiality_settings_parameters">
+        <item>Tous les utilisateurs</item>
+        <item>Tous mes contacts Izly</item>
+        <item>Uniquement mes amis</item>
+        <item>Uniquement moi</item>
+    </string-array>
+    <string-array name="edit_account_photo">
+        <item>Prendre une photo</item>
+        <item>Sélectionner une photo dans la galerie</item>
+    </string-array>
+    <string-array name="edit_or_delete_account_photo">
+        <item>Prendre une photo</item>
+        <item>Sélectionner une photo dans la galerie</item>
+        <item>Supprimer la photo</item>
+    </string-array>
+    <string-array name="messages_list_filter">
+        <item>Tous</item>
+        <item>Partenaires</item>
+        <item>Izly</item>
+        <item>Important</item>
+    </string-array>
+    <string-array name="p2p_get_list_filter">
+        <item>Demandes à traiter</item>
+        <item>Demandes refusées</item>
+        <item>Demandes annulées</item>
+        <item>Toutes les demandes</item>
+    </string-array>
+    <string-array name="p2p_get_mult_choose_image">
+        <item>Prendre une photo</item>
+        <item>Sélectionner une image dans la galerie</item>
+    </string-array>
+    <string-array name="p2p_pay_request_list_filter">
+        <item>Demandes à traiter</item>
+        <item>Demandes refusées</item>
+        <item>Demandes annulées</item>
+        <item>Toutes les demandes</item>
+    </string-array>
+    <string-array name="subscribe_change_remove_photo">
+        <item>Changer de photo</item>
+        <item>Supprimer la photo</item>
+    </string-array>
+    <string-array name="subscribe_choose_photo">
+        <item>Prendre une photo</item>
+        <item>Sélectionner une photo dans la galerie</item>
+    </string-array>
+    <string-array name="subscribe_civility">
+        <item>M.</item>
+        <item>Mme</item>
+    </string-array>
+    <string-array name="subscribe_civility_activation">
+        <item>Sélectionnez une civilité</item>
+        <item>M.</item>
+        <item>Mme</item>
+    </string-array>
+    <string-array name="subscribe_secret_question">
+        <item>Question secrète</item>
+        <item>"Comment s'appelle votre premier professeur ?"</item>
+        <item>Où alliez-vous en vacances pendant votre enfance ?</item>
+        <item>"Comment s'appelle votre meilleur(e) ami(e) d'enfance ?"</item>
+        <item>Quelle est la marque de votre première voiture ?</item>
+        <item>Quel est le premier livre que vous ayez lu ?</item>
+        <item>Question personnalisée</item>
+    </string-array>
+    <string-array name="transaction_list_filter">
+        <item>Toutes opérations</item>
+        <item>"Réceptions d'argent"</item>
+        <item>"Envois d'argent"</item>
+        <item>Rechargements</item>
+        <item>Virements vers ma banque</item>
+        <item>Autres opérations</item>
+    </string-array>
+</resources>

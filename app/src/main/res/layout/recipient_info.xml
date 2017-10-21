@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_recipient_infos" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+        <ImageView android:id="@id/aiv_recipient_photo" android:layout_width="@dimen/money_in_cell_with_img_size" android:layout_height="@dimen/money_in_cell_with_img_size" android:src="@drawable/icon_home_placeholder" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:id="@id/tv_transaction_type" style="@style/Izly.TextView_grey_medium" />
+            <TextView android:id="@id/tv_recipient_type" android:paddingBottom="10.0dip" style="@style/Izly.TextView_greydark_medium" />
+            <TextView android:id="@id/tv_recipient_name" style="@style/Izly.TextView_grey_small" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/Izly.divider" />
+</LinearLayout>

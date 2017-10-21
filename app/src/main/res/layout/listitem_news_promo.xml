@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/aiv_news_feed_recipient_photo" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Smoney.AsyncImageView.ListAvatar" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_news_feed_promo" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/aiv_news_feed_recipient_photo" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textStyle="bold" android:id="@id/tv_news_feed_promo_title" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="sss" android:singleLine="true" android:layout_weight="0.33" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/tv_news_feed_promo_activity" android:layout_width="wrap_content" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="0.33" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textStyle="bold" android:textColor="@color/nearpro_purple" android:id="@id/tv_news_feed_promo_subtitle" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="ddd" android:singleLine="true" android:layout_weight="0.33" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+    </LinearLayout>
+</RelativeLayout>

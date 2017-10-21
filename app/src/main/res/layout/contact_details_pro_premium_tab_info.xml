@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_square_corner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/dtt_schedules" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/contact_details_tv_schedules_label" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/dtt_address" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/my_account_contact_details_tv_address" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/dtt_email" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/my_account_contact_details_tv_send_email" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/dtt_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/my_account_contact_details_tv_call" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

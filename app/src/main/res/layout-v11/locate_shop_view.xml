@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/locate_shop_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_pay_tills" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/activity_vertical_margin">
+        <fr.smoney.android.izly.ui.widget.NoDefaultSpinner android:textSize="14.0sp" android:textColor="@color/izly_grey_dark" android:layout_gravity="center_vertical" android:id="@id/spi_tills_recipient" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="45.0dip" android:prompt="@string/p2p_pay_choose_till" android:spinnerMode="dialog" />
+    </LinearLayout>
+    <Button android:id="@id/btn_pick_near_pro" android:paddingLeft="@dimen/default_margin" android:paddingRight="@dimen/default_margin" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="@string/p2p_pay_btn_locate_near_pro" android:drawableLeft="@drawable/pict_loc" style="@style/Izly.BlueButton" />
+    <include layout="@layout/divider" />
+</LinearLayout>

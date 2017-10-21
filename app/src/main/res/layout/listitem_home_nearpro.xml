@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/default_list_item_bg" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_pro_item_avatar" style="@style/Smoney.AsyncImageView.ListAvatar.NearPro" />
+    <fr.smoney.android.izly.ui.widget.ListItemButton android:id="@id/bt_pro_item_pay_action" android:text="@string/near_pro_list_pay_action" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Smoney.NearProListButton.Blue" />
+    <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/tv_pro_item_name" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/bt_pro_item_pay_action" android:layout_toRightOf="@id/iv_pro_item_avatar" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/nearpro_light_grey" android:ellipsize="end" android:id="@id/tv_pro_item_activity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/iv_pro_item_avatar" android:layout_below="@id/tv_pro_item_name" />
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/nearpro_light_grey" android:id="@id/tv_pro_item_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/iv_pro_item_avatar" android:layout_below="@id/tv_pro_item_activity" />
+</RelativeLayout>

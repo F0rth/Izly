@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_max_action_buttons">2</integer>
+    <integer name="snackbar_text_max_lines">2</integer>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="bic_max_length">11</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <integer name="ga_sessionTimeout">300</integer>
+    <integer name="general_comment_max_length">140</integer>
+    <integer name="google_play_services_version">8487000</integer>
+    <integer name="iban_max_length">27</integer>
+    <integer name="loading_animation_duration">35</integer>
+    <integer name="map_overlay_title_max_length">200</integer>
+    <integer name="map_pro_item_name_max_length">25</integer>
+    <integer name="pwd_max_length">12</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center|left" android:id="@id/tv_date" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" style="@style/Izly.TextView_Title.Blue.Header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <FrameLayout android:id="@id/fl_avatar" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/default_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/aiv_avatar" style="@style/Smoney.AsyncImageView.ListAvatar" />
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/general_tv_dark_grey" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_status_get" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="10.0dip" android:gravity="center_horizontal" android:id="@id/tv_status_paid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:drawableLeft="@drawable/p2p_get_list_iv_status_paid" android:drawablePadding="2.0dip" />
+                    <TextView android:textSize="10.0dip" android:gravity="center_horizontal" android:id="@id/tv_status_to_be_paid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:drawableLeft="@drawable/p2p_get_list_iv_status_to_be_paid" android:drawablePadding="2.0dip" />
+                    <TextView android:textSize="10.0dip" android:gravity="center_horizontal" android:id="@id/tv_status_refused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:drawableLeft="@drawable/p2p_get_list_iv_status_refused" android:drawablePadding="2.0dip" />
+                    <TextView android:textSize="10.0dip" android:gravity="center_horizontal" android:id="@id/tv_status_cancelled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:drawableLeft="@drawable/p2p_get_list_iv_status_cancelled" android:drawablePadding="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingLeft="@dimen/default_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+                <TextView android:textSize="12.0sp" android:textColor="@color/general_tv_light_grey" android:ellipsize="end" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/general_tv_dark_grey" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:customFontPath="fonts/Roboto-Light.ttf" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/list_tv_message_number_background" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_attachment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_tv_piecejointe_background" />
+                </LinearLayout>
+                <ImageView android:id="@id/iv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/v_unread" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pict_promo_new" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/content_description_new" />
+    </RelativeLayout>
+</LinearLayout>

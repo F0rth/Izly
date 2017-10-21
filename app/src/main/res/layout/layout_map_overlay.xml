@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/balloon_overlay_unfocused" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/map_overlay_picto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="40.0dip" android:maxHeight="40.0dip" />
+        <TextView android:ellipsize="end" android:id="@id/map_overlay_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="toto" android:singleLine="true" android:maxLength="@integer/map_overlay_title_max_length" />
+    </LinearLayout>
+</LinearLayout>

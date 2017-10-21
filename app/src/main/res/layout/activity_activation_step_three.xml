@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textColor="#ff474747" android:id="@id/tv_activation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/activation_create_your_secret_question_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff191919" android:id="@id/tv_activation_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/activation_step_three_description" android:layout_below="@id/tv_activation_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff474747" android:id="@id/tv_secret_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/activation_step_three_secret_question" android:layout_below="@id/tv_activation_description" />
+        <EditText android:textSize="14.0sp" android:id="@id/et_secret_question_custom" android:visibility="invisible" android:hint="@string/subscribe_et_secret_question_custom_hint" android:layout_alignTop="@id/b_secret_question" android:inputType="textCapSentences" style="@style/Izly.EditText_Grey" />
+        <Button android:textSize="14.0sp" android:id="@id/b_secret_question" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/tv_secret_question" style="@style/Izly.EditText_Grey" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff474747" android:id="@id/tv_secret_question_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/activation_step_three_secret_question_answer" android:layout_below="@id/et_secret_question_custom" />
+        <EditText android:id="@id/et_secret_answer" android:layout_marginTop="20.0dip" android:hint="@string/subscribe_et_secret_answer_hint" android:layout_below="@id/tv_secret_question_answer" style="@style/Izly.EditText_Grey" />
+        <Button android:enabled="false" android:textColor="@color/text_selector_color_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/b_submit" android:background="@drawable/bg_izly_selector_submit" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="50.0dip" android:text="@string/activation_continue" android:layout_below="@id/et_secret_answer" android:onClick="submit" />
+    </RelativeLayout>
+</ScrollView>

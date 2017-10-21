@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_pay_area_recipient" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin">
+        <fr.smoney.android.izly.ui.widget.ContactAutoCompleteTextView android:id="@id/atv_recipient" android:hint="@string/p2p_pay_tv_recipient_hint" android:singleLine="true" android:imeOptions="actionDone" style="@style/Izly.EditText_Grey" />
+        <ProgressBar android:layout_gravity="center|right" android:id="@id/pb_recipient" android:layout_marginRight="@dimen/default_margin" style="@style/Smoney.AutoCompleteProgressBar" />
+        <IconTextView android:textColor="@color/izly_grey" android:layout_gravity="center|right" android:id="@id/iv_choose_contact" android:padding="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_ico" />
+    </FrameLayout>
+    <View android:layout_marginTop="@dimen/activity_vertical_margin" style="@style/Izly.divider" />
+</LinearLayout>

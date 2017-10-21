@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/account_balance" />
+            <include layout="@layout/confirm_result_money_operation_info" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/confirm_result_recipient_info" />
+            <RelativeLayout style="@style/Smoney.ConfirmResult.FrameLayout.DefaultMargin">
+                <LinearLayout style="@style/Smoney.ConfirmResult.LinearLayout.MoneyInInfo">
+                    <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView style="@style/Smoney.ConfirmResult.TextView.BlueLabel.CreditedAmount" />
+                        <TextView android:id="@id/tv_amount" style="@style/Smoney.ConfirmResult.TextView.Value.CreditedAmount" />
+                    </LinearLayout>
+                    <View style="@style/Smoney.ConfirmResult.View.Separator" />
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView style="@style/Smoney.ConfirmResult.TextView.BlueLabel.MoneyIn" />
+                        <TextView android:id="@id/tv_money_in_amount" style="@style/Smoney.ConfirmResult.TextView.Value" />
+                    </LinearLayout>
+                    <View style="@style/Smoney.ConfirmResult.View.Separator" />
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView style="@style/Smoney.ConfirmResult.TextView.BlueLabel.Date" />
+                        <TextView android:id="@id/tv_date" style="@style/Smoney.ConfirmResult.TextView.Value" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_commission" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView style="@style/Smoney.ConfirmResult.TextView.BlueLabel.CommissionAmount" />
+                        <TextView android:id="@id/tv_commission" style="@style/Smoney.ConfirmResult.TextView.Value" />
+                    </LinearLayout>
+                    <View android:id="@id/v_message_separator" style="@style/Smoney.ConfirmResult.View.Separator" />
+                    <include layout="@layout/confirm_result_message_other" />
+                    <include layout="@layout/confirm_result_message_me" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwritten_area_margin_top" android:src="@drawable/arrow" />
+                    <fr.smoney.android.izly.ui.widget.HandWrittenTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handwritten_details" style="@style/Smoney.Generic.HandWrittenTextView" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/fl_confirm" android:padding="10.0dip" style="@style/Smoney.ConfirmResult.FrameLayout.ConfirmButton">
+        <Button android:id="@id/b_confirm" style="@style/Smoney.ConfirmResult.Button.FullWidth.Confirm" />
+    </FrameLayout>
+</LinearLayout>

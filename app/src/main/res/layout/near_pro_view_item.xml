@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/default_list_item_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_pro_item_avatar" android:layout_width="85.0dip" android:layout_height="85.0dip" style="@style/Smoney.AsyncImageView.ListAvatar.NearPro" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0" android:layout_toRightOf="@id/iv_pro_item_avatar">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_near_pro_informations" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="7.0" android:layout_toRightOf="@id/iv_pro_item_avatar">
+            <TextView android:textSize="20.0dip" android:textColor="@color/general_tv_dark_grey" android:ellipsize="end" android:id="@id/tv_pro_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nom" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/general_tv_light_grey" android:id="@id/tv_pro_item_actvity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Activité" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/smoney_blue" android:id="@id/tv_pro_item_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S-money" />
+        </LinearLayout>
+        <TextView android:textColor="@color/general_tv_light_grey" android:gravity="right" android:id="@id/tv_pro_item_distance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Distance" android:singleLine="true" android:layout_weight="3.0" android:layout_toLeftOf="@id/ll_near_pro_informations" android:layout_alignParentRight="true" />
+    </LinearLayout>
+</RelativeLayout>

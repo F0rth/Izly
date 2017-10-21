@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/recipient" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/destinataire" />
+    <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/amount" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/amount" />
+    <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/date" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/date" />
+    <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/message" />
+</LinearLayout>

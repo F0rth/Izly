@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="15.0dip" />
+            <solid android:color="@color/wingit_primary_color" />
+            <padding android:left="10.0dip" android:top="0.0dip" android:right="10.0dip" android:bottom="0.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="15.0dip" />
+            <solid android:color="@color/wingit_primary_color" />
+            <padding android:left="10.0dip" android:top="0.0dip" android:right="10.0dip" android:bottom="0.0dip" />
+        </shape>
+    </item>
+</selector>

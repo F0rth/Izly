@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/supportName" style="@style/Izly.TextView_greydark_large" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/supportValue" style="@style/Izly.TextView_grey" />
+    </LinearLayout>
+    <IconTextView android:textSize="20.0sp" android:textColor="@color/izly_red" android:id="@id/opposition_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{fa-minus-circle}" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

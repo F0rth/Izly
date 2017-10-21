@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/RelativeLayout1" android:background="@drawable/bg_login" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.viewpagerindicator.CirclePageIndicator android:id="@id/indicator" android:padding="@dimen/large_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/pager" smoney:fillColor="@color/izly_blue" smoney:strokeColor="@color/izly_blue" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_welcome_view_buttons" android:background="@color/izly_white_transparent" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="@dimen/welcome_bottom_banner" android:layout_below="@id/indicator" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:id="@id/tv_welcome_view_subscribe" android:background="@drawable/bg_izly_selector_orange_tuto" android:layout_width="0.0dip" android:layout_marginRight="@dimen/default_margin" android:text="@string/activate" android:layout_weight="2.0" style="@style/Izly.TextView_orange" />
+        <Button android:textSize="16.0sp" android:id="@id/tv_welcome_view_connect" android:background="@drawable/bg_izly_selector_blue_light_stroke" android:layout_width="0.0dip" android:text="@string/welcome_activity_connexion" android:layout_weight="1.0" style="@style/Izly.TextView_blue_light" />
+    </LinearLayout>
+</LinearLayout>

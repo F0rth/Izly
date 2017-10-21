@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/contact_details_pro_header" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/pro_premium_promo_tv" android:background="@drawable/contact_details_premium_promo_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <FrameLayout android:id="@id/relativeLayoutMapView" android:layout_width="fill_parent" android:layout_height="@dimen/contact_details_map_view_height">
+        <com.google.android.gms.maps.MapView android:id="@id/mapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/view_pager_content_rl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.astuetz.viewpagertabs.ViewPagerTabs android:id="@id/tabs" app:tabPaddingTop="10.0dip" app:backgroundColorPressed="@color/izly_blue" app:textColor="@color/izly_white" app:textColorCenter="@color/izly_white" app:lineColorCenter="@color/izly_white" app:lineHeight="2.0dip" app:textSize="8.0dip" style="@style/Smoney.ViewPagerTabs" />
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/b_p2p_pay" android:layout_below="@id/tabs" />
+        <Button android:id="@id/b_p2p_pay" android:text="@string/contact_details_bt_pay_pro" android:layout_alignParentBottom="true" style="@style/Izly.BlueButton" />
+    </RelativeLayout>
+</LinearLayout>

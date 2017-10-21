@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/confirm_information" style="@style/Izly.TextView_Title.Blue.Header" />
+        <include android:id="@id/account_balance" layout="@layout/account_balance" />
+        <include layout="@layout/confirm_result_money_operation_info" />
+        <include layout="@layout/detail_amount_date" />
+        <IconButton android:id="@id/b_confirm" android:text="@string/money_in_cb_b_confirm" android:layout_alignParentBottom="true" style="@style/Izly.BlueButton" />
+    </LinearLayout>
+</ScrollView>

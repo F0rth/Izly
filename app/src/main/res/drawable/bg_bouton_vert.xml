@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#e97ac943" android:endColor="#e972b340" android:angle="90.0" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/bton_vert" />
+    </item>
+</selector>

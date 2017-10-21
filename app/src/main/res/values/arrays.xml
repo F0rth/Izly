@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="change_confidentiality_settings_parameters">
+        <item>All users</item>
+        <item>All my Izly contacts</item>
+        <item>Only my friends</item>
+        <item>Only me</item>
+    </string-array>
+    <string-array name="edit_account_photo">
+        <item>Take a photo</item>
+        <item>Choose a photo from the gallery</item>
+    </string-array>
+    <string-array name="edit_or_delete_account_photo">
+        <item>Take one photo</item>
+        <item>Select a photo from the gallery</item>
+        <item>Remove this photo</item>
+    </string-array>
+    <string-array name="messages_list_filter">
+        <item>All</item>
+        <item>Partners</item>
+        <item>Izly</item>
+        <item>Important</item>
+    </string-array>
+    <string-array name="p2p_get_list_filter">
+        <item>Requests to respond</item>
+        <item>Rejected requests</item>
+        <item>Cancelled requests</item>
+        <item>All requests</item>
+    </string-array>
+    <string-array name="p2p_get_mult_choose_image">
+        <item>Take a photo</item>
+        <item>Select one photo from the gallery</item>
+    </string-array>
+    <string-array name="p2p_pay_request_list_filter">
+        <item>Requests to respond</item>
+        <item>Rejected requests</item>
+        <item>Cancelled requests</item>
+        <item>All requests</item>
+    </string-array>
+    <string-array name="subscribe_change_remove_photo">
+        <item>Change this photo</item>
+        <item>Remove this photo</item>
+    </string-array>
+    <string-array name="subscribe_choose_photo">
+        <item>Take a photo</item>
+        <item>Select a photo from the gallery</item>
+    </string-array>
+    <string-array name="subscribe_civility">
+        <item>Mr</item>
+        <item>Ms</item>
+    </string-array>
+    <string-array name="subscribe_civility_activation">
+        <item>Select a title</item>
+        <item>Mr</item>
+        <item>Ms</item>
+    </string-array>
+    <string-array name="subscribe_secret_question">
+        <item>Secret question</item>
+        <item>What was the name of your first teacher?</item>
+        <item>Where did you spend your childhood Summer holidays?</item>
+        <item>What is the name of your favourite childhood friend?</item>
+        <item>What was the brand of your first car?</item>
+        <item>What was the first book you read?</item>
+        <item>Personal question</item>
+    </string-array>
+    <string-array name="transaction_list_filter">
+        <item>All transactions</item>
+        <item>Receiving funds</item>
+        <item>Sending funds</item>
+        <item>Top-up</item>
+        <item>Transfers to my bank</item>
+        <item>Other transactions</item>
+    </string-array>
+    <string-array name="activation_international_phone">
+        <item>DE +49</item>
+        <item>BE +32</item>
+        <item>ES +34</item>
+        <item>FR +33</item>
+        <item>IE +353</item>
+        <item>IT +39</item>
+        <item>LU +352</item>
+        <item>PT +351</item>
+        <item>GB +44</item>
+        <item>CH +41</item>
+    </string-array>
+</resources>

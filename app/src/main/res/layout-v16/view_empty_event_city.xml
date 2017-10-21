@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:background="@color/white" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/wingit_secondary_color" android:gravity="center" android:id="@id/empty_view_icon_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+    <android.support.v7.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/refine_filters_btn" android:background="@drawable/grey_rounded_button_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="20.0dip" android:text="@string/wingit_timeline_button_refine_filters" android:textAllCaps="true" android:fontFamily="sans-serif" style="?android:attr/borderlessButtonStyle" />
+</LinearLayout>

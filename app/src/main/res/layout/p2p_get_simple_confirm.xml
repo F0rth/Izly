@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/confirm_result_recipient_info" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <LinearLayout style="@style/Smoney.ConfirmResult.LinearLayout.RequestInfo">
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Smoney.ConfirmResult.LinesInfos">
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.3" style="@style/Smoney.DetailsLabel.CreditedAmount" />
+                    <TextView android:id="@id/tv_amount" style="@style/Smoney.DetailsValue" />
+                    <TextView android:gravity="bottom" android:id="@id/tv_without_amount" android:paddingTop="7.0dip" android:visibility="gone" android:text="@string/confirm_result_tv_amount_without_amount" style="@style/Smoney.ConfirmResult.TextView.Value" />
+                </LinearLayout>
+                <View style="@style/Smoney.ConfirmResult.View.Separator" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Smoney.ConfirmResult.LinearLayout.LinesInfos">
+                    <TextView style="@style/Smoney.ConfirmResult.TextView.BlueLabel.Date" />
+                    <TextView android:id="@id/tv_date" style="@style/Smoney.ConfirmResult.TextView.Value" />
+                </LinearLayout>
+                <View android:id="@id/v_message_separator" style="@style/Smoney.ConfirmResult.View.Separator" />
+                <include layout="@layout/confirm_result_message_me" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwritten_area_margin_top" android:src="@drawable/arrow" />
+                <fr.smoney.android.izly.ui.widget.HandWrittenTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handwritten_details" style="@style/Smoney.Generic.HandWrittenTextView" />
+            </LinearLayout>
+        </RelativeLayout>
+        <include layout="@layout/layout_separation" />
+        <Button android:id="@id/b_confirm" style="@style/Smoney.ConfirmResult.Button.FullWidth.Confirm" />
+    </LinearLayout>
+</ScrollView>

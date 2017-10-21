@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/manage_option" style="@style/Izly.TextView_Title.Blue.Header" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/p2p_get_mult_option_divide_amount" android:layout_weight="1.0" style="@style/Izly.TextView_grey" />
+            <CheckBox android:id="@id/cb_p2p_option_divide_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        </LinearLayout>
+        <TextSwitcher android:layout_gravity="start" android:id="@id/tv_p2p_option_divide_amount_info" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingTop="@dimen/default_margin" android:paddingRight="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" />
+        <View style="@style/Izly.divider" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:text="@string/p2p_get_mult_option_include_me" android:layout_weight="1.0" style="@style/Izly.TextView_grey" />
+                <CheckBox android:id="@id/cb_p2p_option_include_me" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+            </LinearLayout>
+            <TextSwitcher android:layout_gravity="start" android:id="@id/tv_p2p_option_include_me_info" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingTop="@dimen/default_margin" android:paddingRight="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" />
+        </LinearLayout>
+        <View style="@style/Izly.divider" />
+        <Button android:id="@id/bt_option_valid" android:layout_marginBottom="10.0dip" android:text="@string/p2p_get_mult_motif_valider" style="@style/Izly.BlueButton" />
+    </LinearLayout>
+</ScrollView>

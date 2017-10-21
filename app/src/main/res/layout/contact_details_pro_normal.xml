@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/contact_details_pro_header" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/pro_premium_promo_tv" android:background="@drawable/contact_details_premium_promo_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <View style="@style/Smoney.MyAccountContactDetails.View.Separator" />
+        <FrameLayout android:id="@id/relativeLayoutMapView" android:layout_width="fill_parent" android:layout_height="@dimen/contact_details_map_view_height">
+            <com.google.android.gms.maps.MapView android:id="@id/mapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_square_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <View android:id="@id/v_address_separator" style="@style/Smoney.MyAccountContactDetails.View.Separator" />
+            <LinearLayout android:id="@id/ll_address" style="@style/Smoney.MyAccountContactDetails.LinearLayout.Line">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/my_account_contact_details_tv_address" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Label" />
+                    <TextView android:id="@id/tv_address" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Value" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_accessibility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pict_accessibilite" />
+                <ImageButton android:id="@id/ib_address" android:src="@drawable/my_account_contact_details_ib_address" style="@style/Smoney.MyAccountContactDetails.ImageButton" />
+            </LinearLayout>
+            <View android:id="@id/v_schedules_separator" style="@style/Smoney.MyAccountContactDetails.View.Separator" />
+            <LinearLayout android:id="@id/ll_schedules" style="@style/Smoney.MyAccountContactDetails.LinearLayout.Line">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/contact_details_tv_schedules_label" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Label" />
+                    <TextView android:id="@id/tv_schedules" android:singleLine="false" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Value" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/v_identifier_separator" style="@style/Smoney.MyAccountContactDetails.View.Separator" />
+            <LinearLayout android:id="@id/ll_identifier" style="@style/Smoney.MyAccountContactDetails.LinearLayout.Line">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/contact_details_tv_identifier_pro_label" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Label" />
+                    <TextView android:id="@id/tv_identifier" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Value" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/v_email_separator" style="@style/Smoney.MyAccountContactDetails.View.Separator" />
+            <LinearLayout android:id="@id/ll_email" style="@style/Smoney.MyAccountContactDetails.LinearLayout.Line">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/my_account_contact_details_tv_send_email" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Label" />
+                    <TextView android:id="@id/tv_email" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Value" />
+                </LinearLayout>
+                <ImageButton android:id="@id/ib_email" android:src="@drawable/my_account_contact_details_ib_email" style="@style/Smoney.MyAccountContactDetails.ImageButton" />
+            </LinearLayout>
+            <View android:id="@id/v_website_separator" style="@style/Smoney.MyAccountContactDetails.View.Separator" />
+            <LinearLayout android:id="@id/ll_website" style="@style/Smoney.MyAccountContactDetails.LinearLayout.Line">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/my_account_contact_details_tv_website" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Label" />
+                    <TextView android:id="@id/tv_website" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Value" />
+                </LinearLayout>
+                <ImageButton android:id="@id/ib_website" android:src="@drawable/my_account_contact_details_ib_website" style="@style/Smoney.MyAccountContactDetails.ImageButton" />
+            </LinearLayout>
+            <View android:id="@id/v_phone_separator" style="@style/Smoney.MyAccountContactDetails.View.Separator" />
+            <LinearLayout android:id="@id/ll_phone" style="@style/Smoney.MyAccountContactDetails.LinearLayout.Line">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:text="@string/my_account_contact_details_tv_call" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Label" />
+                    <TextView android:id="@id/tv_phone" style="@style/Smoney.MyAccountContactDetails.TextView.Line.Value" />
+                </LinearLayout>
+                <ImageButton android:id="@id/ib_phone" android:layout_marginRight="10.0dip" android:src="@drawable/my_account_contact_details_ib_phone" style="@style/Smoney.MyAccountContactDetails.ImageButton" />
+                <View android:background="@color/confirm_result_v_separator" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <ImageButton android:id="@id/ib_sms" android:src="@drawable/my_account_contact_details_ib_sms" style="@style/Smoney.MyAccountContactDetails.ImageButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/b_p2p_pay" android:text="@string/contact_details_bt_pay_pro" style="@style/Smoney.MyAccountContactDetails.Button.FullWidth" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_last_transactions_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwritten_area_margin_top" android:src="@drawable/arrow" />
+                <fr.smoney.android.izly.ui.widget.HandWrittenTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handwritten_last_exchange" style="@style/Smoney.Generic.HandWrittenTextView" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_last_transactions" android:background="@drawable/bg_square_corner" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/goodplan_img" android:background="@color/izly_blue_extra_light" android:layout_width="fill_parent" android:layout_height="@dimen/good_plan_height" android:scaleType="centerCrop" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/good_plan_height">
+        <TextView android:id="@id/category" android:text="voyages" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:textAllCaps="true" style="@style/Izly.header_goodplan" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/izly_black_transparent" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/good_plan_title" android:text="Voyages étudiants" style="@style/Izly.TextView_white_bold" />
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/good_plan_desc" android:text="@string/good_plan_desc" style="@style/Izly.TextView_white_small" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

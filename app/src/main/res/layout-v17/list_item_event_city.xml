@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" app:cardBackgroundColor="@color/white">
+        <android.support.v7.widget.LinearLayoutCompat android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:divider="@drawable/divider" app:showDividers="middle">
+            <RelativeLayout android:id="@id/content_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_centerVertical="true">
+                <ImageView android:id="@id/content_image" android:layout_width="@dimen/list_item_image_size" android:layout_height="@dimen/list_item_image_size" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/wingit_primary_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/content_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_toLeftOf="@id/content_image" android:layout_alignParentLeft="true" android:fontFamily="sans-serif-medium" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/grey600" android:ellipsize="end" android:id="@id/sub_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:fontFamily="sans-serif" />
+            </RelativeLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

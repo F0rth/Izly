@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/wingit_primary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wingit_timeline_label_tomorrow_is_another_day" />
+    <android.support.v7.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/tomorrow_button" android:background="@drawable/rounded_button_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="20.0dip" android:text="@string/wingit_timeline_button_show_tomorrows_events" android:textAllCaps="true" />
+</LinearLayout>

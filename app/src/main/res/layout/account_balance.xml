@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/account_balance_view" android:background="@color/izly_blue_extra_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_account_balance_container" android:padding="@dimen/default_margin" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/date_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="24.0sp" android:id="@id/tv_account_balance_label_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_mon_solde_solde" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="11.0sp" android:id="@id/tv_account_balance_date" android:layout_width="wrap_content" android:layout_height="wrap_content" smoney:customFontPath="fonts/Roboto-Regular.ttf" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="38.0sp" android:textColor="@color/izly_grey_dark" android:id="@id/tv_account_balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="18.0sp" android:textColor="@color/izly_grey_dark" android:id="@id/tv_account_balance_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/tv_account_balance_value" android:layout_alignTop="@id/tv_account_balance_value" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Smoney.HomeShadow" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cash_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_below="@id/date_layout">
+            <View style="@style/Izly.divider_home" />
+            <TextView android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/reload_in_cash" android:layout_alignParentLeft="true" style="@style/Izly.TextView_greydark_small" />
+            <TextView android:id="@id/cash_value" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" android:layout_alignParentRight="true" style="@style/Izly.TextView_greydark" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/counter_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_below="@id/cash_layout">
+            <View style="@style/Izly.divider_home" />
+            <TextView android:id="@id/tv_counter_title" android:layout_marginTop="@dimen/default_margin" android:text="@string/counter_layout_title" android:layout_alignParentLeft="true" style="@style/Izly.TextView_greydark_small" />
+            <ImageView android:id="@id/counter_arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:src="@drawable/disclosure_down" android:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_counter_details" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_counter_title" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/money_in_out_b_pressed_06" />
+    <item android:state_checked="true" android:drawable="@drawable/money_in_out_b_on_06" />
+    <item android:drawable="@drawable/money_in_out_b_idle_06" />
+</selector>

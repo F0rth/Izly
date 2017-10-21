@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sepa_input_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/sepa_bic" style="@style/Izly.TextView_grey" />
+        <EditText android:id="@id/et_bic" android:focusable="false" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/default_margin" style="@style/Izly.EditText_Grey" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/sepa_iban" style="@style/Izly.TextView_grey" />
+        <EditText android:id="@id/et_iban" android:focusable="false" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/default_margin" style="@style/Izly.EditText_Grey" />
+    </LinearLayout>
+    <include layout="@layout/divider" />
+</LinearLayout>

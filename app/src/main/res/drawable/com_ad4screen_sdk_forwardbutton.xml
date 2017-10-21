@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/com_ad4screen_sdk_borderless_button" />
+    <item>
+        <selector>
+            <item android:state_enabled="true">
+                <bitmap android:gravity="center" android:src="@drawable/com_ad4screen_sdk_navigation_forward" />
+            </item>
+            <item android:state_enabled="false">
+                <bitmap android:gravity="center" android:src="@drawable/com_ad4screen_sdk_navigation_forward_disabled" />
+            </item>
+        </selector>
+    </item>
+</layer-list>

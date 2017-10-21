@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textColor="#ff474747" android:id="@id/tv_activation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/activation_phone_validation_wait_sms_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff191919" android:id="@id/tv_activation_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/activation_phone_validation_description" android:layout_below="@id/tv_activation_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff1ea0db" android:gravity="center" android:id="@id/tv_activation_sms_not_received" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/activation_sms_not_received" android:layout_below="@id/tv_activation_description" android:layout_centerHorizontal="true" android:onClick="activationSmsNotReceived" />
+        <ImageView android:id="@id/iv_phone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="50.0dip" android:src="@drawable/ic_activation_phone_validation" android:layout_below="@id/tv_activation_sms_not_received" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</ScrollView>

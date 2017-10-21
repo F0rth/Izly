@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/default_list_item_bg" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0" android:minHeight="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/nearpro_cat_picto" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.5" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/nearpro_cat_text" android:paddingLeft="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Alimentaire" android:layout_weight="6.5" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/nearpro_cat_picto_check" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/select_check" android:layout_weight="2.0" />
+</LinearLayout>

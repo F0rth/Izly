@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_message_me_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="@string/comment_for_user" style="@style/Izly.TextView_grey" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin">
+        <EditText android:id="@id/et_message_me" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/hint_message_point" android:layout_weight="1.0" style="@style/Izly.EditText_Grey" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_message_me" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/default_margin" android:src="@drawable/icon_home_placeholder" />
+    </LinearLayout>
+    <View android:layout_alignParentBottom="true" style="@style/Izly.divider" />
+</LinearLayout>

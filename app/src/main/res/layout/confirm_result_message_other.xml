@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_message_other" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip">
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/aiv_message_avatar_other" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/icon_home_placeholder" android:scaleType="centerCrop" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="top" android:id="@id/tv_message_name_other" style="@style/Izly.TextView_grey_small" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tv_message_other" style="@style/Izly.TextView_greydark" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_message_sender_other" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" android:layout_weight="1.0" android:layout_alignParentRight="true">
+            <TextView android:layout_gravity="right" android:id="@id/tv_message_date_other" style="@style/Izly.TextView_grey_small" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/Izly.divider" />
+</LinearLayout>

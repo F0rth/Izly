@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/text" android:layout_marginLeft="@dimen/default_margin" android:layout_toRightOf="@id/img" android:layout_centerVertical="true" style="@style/Izly.TextView_grey" />
+    <IconTextView android:textSize="17.0sp" android:textColor="@color/izly_grey_75" android:id="@id/chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="{fa-chevron-down}" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

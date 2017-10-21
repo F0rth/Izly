@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/sv_details" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.devsmart.android.ui.HorizontalListView android:gravity="left" android:id="@id/riv_recipients" android:layout_margin="20.0dip" android:cacheColorHint="@android:color/transparent" style="@style/Smoney.P2PGetMult.RecipientItemsView" />
+        <include android:id="@id/ll_recipient_infos" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" layout="@layout/confirm_result_recipient_info" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_square_corner" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_recipient_amount_block" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_recipient_amount" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.3" style="@style/Smoney.DetailsLabel.CreditedAmount" />
+                        <TextView android:id="@id/tv_recipient_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" style="@style/Smoney.DetailsValue" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_recipient_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/p2p_get_list_iv_status_to_be_paid" android:layout_weight="0.1" />
+                    </LinearLayout>
+                    <View android:id="@id/v_separator_recipient_amount" style="@style/Smoney.ConfirmResult.View.Separator" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_amount_block" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/ll_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Smoney.ConfirmResult.LinearLayout.LinesInfos">
+                        <TextView style="@style/Smoney.DetailsLabel.CreditedAmount" />
+                        <RelativeLayout android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.7">
+                            <TextView android:id="@id/tv_already_payed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Smoney.DetailsValue" />
+                            <TextView android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dip" android:layout_alignBaseline="@id/tv_already_payed" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Smoney.DetailsValue.Total" />
+                            <TextView android:id="@id/tv_amount_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:layout_toLeftOf="@id/tv_amount" android:layout_alignBaseline="@id/tv_already_payed" android:layout_alignParentBottom="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:id="@id/v_separator_amount" style="@style/Smoney.ConfirmResult.View.Separator" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Smoney.ConfirmResult.LinearLayout.LinesInfos">
+                        <TextView android:id="@id/tv_number_of_paid" android:drawableLeft="@drawable/p2p_get_list_iv_status_paid_min" style="@style/Smoney.P2PGetMult.TextView.NumberOfStatus" />
+                        <TextView android:id="@id/tv_number_of_to_be_paid" android:drawableLeft="@drawable/p2p_get_list_iv_status_to_be_paid_min" style="@style/Smoney.P2PGetMult.TextView.NumberOfStatus" />
+                        <TextView android:id="@id/tv_number_of_refused" android:drawableLeft="@drawable/p2p_get_list_iv_status_refused_min" style="@style/Smoney.P2PGetMult.TextView.NumberOfStatus" />
+                        <TextView android:id="@id/tv_number_of_cancelled" android:drawableLeft="@drawable/p2p_get_list_iv_status_cancelled_min" style="@style/Smoney.P2PGetMult.TextView.NumberOfStatus" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@id/v_separator_recap" style="@style/Smoney.ConfirmResult.View.Separator" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Smoney.ConfirmResult.LinearLayout.LinesInfos">
+                    <TextView style="@style/Smoney.DetailsLabel.Date" />
+                    <TextView android:id="@id/tv_date" style="@style/Smoney.ConfirmResult.TextView.Value" />
+                </LinearLayout>
+                <View android:id="@id/v_message_separator" style="@style/Smoney.ConfirmResult.View.Separator" />
+                <include layout="@layout/confirm_result_message_me" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="20.0sp" android:textColor="@color/general_tv_light_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handwritten_details" customFontPath="fonts/Roboto-Regular.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:id="@id/b_attachment" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" style="@style/Smoney.Button.Attachment.Details" />
+        <include layout="@layout/layout_separation" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/block_button_recipient_specific" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/b_cancel_request" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="@string/p2p_get_mult_details_b_cancel_request" android:layout_weight="1.0" style="@style/Smoney.Button.Grey" />
+            <Button android:id="@id/b_relaunch_request" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/p2p_get_mult_details_b_relaunch_request" android:layout_weight="1.0" style="@style/Smoney.Button.Blue" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/block_button_all_recipients" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/b_relaunch_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/p2p_get_mult_details_b_relaunch_all_request" style="@style/Smoney.ConfirmResult.Button.FullWidth" />
+            <Button android:id="@id/b_cancel_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/p2p_get_mult_details_b_cancel_all_request" style="@style/Smoney.ConfirmResult.Button.FullWidth" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

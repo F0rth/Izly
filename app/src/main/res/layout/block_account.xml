@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_block_account_bottom_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/b_confirm" android:text="@string/block_account_b_confirm" style="@style/Izly.BlueButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_block_account_bottom_area" android:layout_alignParentTop="true">
+        <TextView android:text="@string/warnning" style="@style/Izly.TextView_Title.Blue.Header" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="@string/block_account_tv_info" android:drawableLeft="@drawable/pict_info" android:drawablePadding="@dimen/default_margin" style="@style/Izly.TextView_grey" />
+        <View android:layout_marginTop="@dimen/activity_vertical_margin" style="@style/Izly.divider" />
+        <TextView android:layout_margin="@dimen/activity_vertical_margin" android:text="@string/block_account_et_explanation" style="@style/Izly.TextView_grey" />
+        <EditText android:gravity="top" android:id="@id/et_explanation" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:hint="@string/hint_message_point" android:maxLength="@integer/general_comment_max_length" android:inputType="textCapSentences" style="@style/Izly.EditText_Grey" />
+        <View android:layout_marginTop="@dimen/activity_vertical_margin" style="@style/Izly.divider" />
+    </LinearLayout>
+</RelativeLayout>

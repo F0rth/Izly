@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/no_network_panel" android:background="@color/izly_grey_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="17.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/no_network_message" smoney:customFontPath="fonts/HelveticaLight.ttf" />
+</LinearLayout>

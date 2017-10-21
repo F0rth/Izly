@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/tv_p2p_status_uncomplete" android:background="@color/izly_orange" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_p2p_status_uncomplete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/header_status_refuse" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tv_p2p_status_uncomplete_texttop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="coajkpcok apo ackpa apokpokovpkpav" android:layout_toRightOf="@id/iv_p2p_status_uncomplete" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_p2p_status_uncomplete_textbottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="coajkpcok apo ackpa apokpokovpkpav" android:layout_toRightOf="@id/iv_p2p_status_uncomplete" android:layout_below="@id/tv_p2p_status_uncomplete_texttop" />
+</RelativeLayout>

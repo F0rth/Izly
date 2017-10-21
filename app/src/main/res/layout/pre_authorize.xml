@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/account_balance" />
+        <include layout="@layout/layout_separation" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/maiv_pre_authorize_recipient_avatar" style="@style/Smoney.AsyncImageView.PreAuthorize.Avatar" />
+            <TextView android:id="@id/tv_pre_authorize_recipient" android:background="@drawable/general_et_background" style="@style/Smoney.TextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/aiv_pre_authorize_identifier_image" android:layout_width="66.0dip" android:layout_height="wrap_content" android:src="@drawable/cf_fnac" style="@style/Smoney.AsyncImageView.PreAuthorize" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/et_pre_authorize_identifier" android:background="@drawable/general_et_background" android:visibility="gone" android:layout_height="45.0dip" android:hint="@string/pre_authorize_identifier_hint" android:maxLength="16" android:inputType="number" style="@style/Smoney.EditText.Grey" />
+                <TextView android:id="@id/tv_pre_authorize_identifier" android:background="@drawable/bg_square_corner" android:focusable="false" android:focusableInTouchMode="false" android:layout_height="45.0dip" android:hint="@string/pre_authorize_identifier_hint" android:inputType="none" style="@style/Smoney.EditText.Grey" />
+            </FrameLayout>
+        </LinearLayout>
+        <include layout="@layout/layout_separation" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:id="@id/tv_pre_authorize_infos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/pre_authorize_amount_infos" />
+            <ImageView android:id="@id/iv_pre_authorize_amount" android:layout_width="@dimen/aiv_avatar_p2p_width" android:layout_height="wrap_content" android:src="@drawable/pict_montant" android:layout_below="@id/tv_pre_authorize_infos" android:layout_alignParentLeft="true" android:contentDescription="@string/content_description_amount" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fl_pre_authorize_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/iv_pre_authorize_amount" android:layout_below="@id/tv_pre_authorize_infos" android:layout_alignBaseline="@id/iv_pre_authorize_amount">
+                <EditText android:textSize="22.0sp" android:textColor="@color/general_tv_dark_grey" android:id="@id/et_pre_authorize_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/p2p_get_simple_tv_amount_hint" android:singleLine="true" android:inputType="numberDecimal" style="@style/Smoney.EditText.GreyWithoutLayout" />
+                <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ffbfbfbf" android:layout_gravity="center|right" android:id="@id/tv_amount_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+            </FrameLayout>
+        </RelativeLayout>
+        <include layout="@layout/layout_separation" />
+        <Button android:id="@id/bt_pre_authorize_valid" android:text="@string/p2p_get_simple_bt_valid" style="@style/Smoney.Button.Blue.FillParent" />
+    </LinearLayout>
+</ScrollView>

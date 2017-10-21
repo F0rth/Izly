@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_login" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/login_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="55.0dip" android:src="@drawable/logo_izly_by_crous" android:contentDescription="@string/content_description_logo" />
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/ll_login_infos_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/double_margin" android:layout_marginRight="@dimen/double_margin">
+            <TextView android:textSize="17.0sp" android:textColor="@color/izly_grey_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_tv_connected_with" />
+            <TextView android:textSize="17.0sp" android:gravity="top" android:layout_gravity="bottom" android:id="@id/tv_login_connected_with" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <EditText android:id="@id/et_login" android:layout_marginLeft="@dimen/double_margin" android:layout_marginRight="@dimen/double_margin" android:hint="@string/login_et_login_hint" android:singleLine="true" android:imeOptions="actionNext" style="@style/Izly.EditText_transparent" />
+        <View android:background="@color/izly_blue_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/double_margin" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/double_margin" android:layout_marginBottom="11.5dip" />
+        <EditText android:id="@id/et_password" android:layout_marginLeft="@dimen/double_margin" android:layout_marginRight="@dimen/double_margin" android:layout_marginBottom="@dimen/default_margin" android:hint="@string/login_et_password_hint" android:maxLength="6" android:imeOptions="actionDone" style="@style/Izly.EditText_transparent_Password" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:enabled="false" android:id="@id/b_submit" android:layout_marginBottom="5.0dip" android:text="@string/login_b_submit" style="@style/Izly.BlueLightButton" />
+        <Button android:id="@id/activation" android:text="@string/activate" style="@style/Izly.OrangeButton" />
+        <Button android:textStyle="bold" android:id="@id/b_subscribe" android:background="@drawable/login_btn_open_account" android:visibility="gone" android:layout_marginBottom="5.0dip" android:text="@string/login_b_subscribe" style="@style/Smoney.Login.Button" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/izly_grey_dark" android:layout_gravity="center_horizontal" android:id="@id/ll_forgotten_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/login_b_forgotten_password" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_tuto_login" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pict_info_login" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

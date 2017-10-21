@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_separation" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/arrow" android:contentDescription="@string/content_description_none" />
+        <fr.smoney.android.izly.ui.widget.HandWrittenTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/other_motif" style="@style/Smoney.Generic.HandWrittenTextView" />
+    </LinearLayout>
+    <EditText android:gravity="top" android:id="@id/et_motif_other" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="3" android:singleLine="false" android:inputType="textMultiLine" android:imeOptions="actionDone|flagForceAscii" android:imeActionLabel="@android:string/ok" style="@style/Smoney.EditText.GreyWithoutLayout" />
+</LinearLayout>

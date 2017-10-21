@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="0.0dip" android:paddingBottom="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:text="@string/fill_information" style="@style/Izly.TextView_Title.Blue.Header" />
+        <include layout="@layout/account_balance" />
+        <include layout="@layout/credit_card_list_layout" />
+        <include layout="@layout/tiers_input_view" />
+        <include layout="@layout/sepa_bic_iban_layout" />
+        <include layout="@layout/amount_damier" />
+        <include layout="@layout/layout_amount_view" />
+        <include layout="@layout/message_view" />
+        <include layout="@layout/view_submit_button" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/root_tutorial" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/picture_tutorial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intro_carte2" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:gravity="center" android:layout_gravity="center" android:id="@id/text_tutorial" android:layout_marginTop="110.0dip" android:layout_marginBottom="35.0dip" android:text="@string/envoyer_desc" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_white_large" />
+    </FrameLayout>
+</RelativeLayout>

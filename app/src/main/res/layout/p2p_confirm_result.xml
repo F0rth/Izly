@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_p2p_confirm_result" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/title_info" android:text="@string/confirm_information" style="@style/Izly.TextView_Title.Blue.Header" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/title_info_result" android:visibility="gone" style="@style/Smoney.ConfirmResult.TextView.StatusBar.Paid" />
+        <include layout="@layout/confirm_result_recipient_info" />
+        <com.devsmart.android.ui.HorizontalListView android:gravity="left" android:id="@id/riv_recipients" android:visibility="gone" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:cacheColorHint="@android:color/transparent" style="@style/Smoney.P2PGetMult.RecipientItemsView" />
+        <View style="@style/Izly.divider" />
+        <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/confirm_result_tv_amount" />
+        <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_per_people" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/confirm_result_tv_per" />
+        <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/confirm_result_tv_date" />
+        <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_commission" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/confirm_result_tv_commission" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/confirm_result_message_me" />
+        <include layout="@layout/layout_commission_info" />
+        <IconButton android:layout_gravity="bottom" android:id="@id/b_submit" android:text="@string/confirm_result_b_confirm" style="@style/Izly.BlueButton" />
+    </LinearLayout>
+</ScrollView>

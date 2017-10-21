@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/com_ad4screen_actionbar" android:background="@drawable/com_ad4screen_sdk_actionbar_background_top_holo_dark" android:layout_width="fill_parent" android:layout_height="@dimen/com_ad4screen_sdk_actionbar_size">
+        <Button android:id="@id/com_ad4screen_sdk_closebutton" android:background="@drawable/com_ad4screen_sdk_borderless_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignRight="@id/com_ad4screen_sdk_logo" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/com_ad4screen_sdk_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_ad4screen_sdk_back_dark" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/a4s_content_back" />
+        <ImageView android:id="@id/com_ad4screen_sdk_logo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/com_ad4screen_sdk_back" android:layout_centerVertical="true" android:contentDescription="@string/a4s_content_back" />
+        <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/com_ad4screen_sdk_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/com_ad4screen_sdk_logo" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@android:color/white" android:id="@id/com_ad4screen_sdk_body" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/com_ad4screen_sdk_buttonbar" android:layout_below="@id/com_ad4screen_actionbar" />
+    <WebView android:id="@id/com_ad4screen_sdk_webview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/com_ad4screen_sdk_buttonbar" android:layout_below="@id/com_ad4screen_actionbar" />
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/com_ad4screen_sdk_buttonbar" android:background="@drawable/com_ad4screen_sdk_actionbar_background_bottom_holo_dark" android:layout_width="fill_parent" android:layout_height="@dimen/com_ad4screen_sdk_actionbar_size" android:layout_alignParentBottom="true">
+        <ProgressBar android:id="@id/com_ad4screen_sdk_progress" android:layout_width="@dimen/com_ad4screen_sdk_actionbar_icon_size" android:layout_height="@dimen/com_ad4screen_sdk_actionbar_icon_size" />
+        <Button android:id="@id/com_ad4screen_sdk_backbutton" android:background="@drawable/com_ad4screen_sdk_backbutton" android:layout_width="@dimen/com_ad4screen_sdk_actionbar_icon_size" android:layout_height="fill_parent" />
+        <Button android:id="@id/com_ad4screen_sdk_forwardbutton" android:background="@drawable/com_ad4screen_sdk_forwardbutton" android:layout_width="@dimen/com_ad4screen_sdk_actionbar_icon_size" android:layout_height="fill_parent" />
+        <ToggleButton android:id="@id/com_ad4screen_sdk_reloadbutton" android:background="@drawable/com_ad4screen_sdk_reloadbutton" android:layout_width="@dimen/com_ad4screen_sdk_actionbar_icon_size" android:layout_height="fill_parent" android:textOn="" android:textOff="" />
+        <Button android:id="@id/com_ad4screen_sdk_browsebutton" android:background="@drawable/com_ad4screen_sdk_browsebutton" android:layout_width="@dimen/com_ad4screen_sdk_actionbar_icon_size" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

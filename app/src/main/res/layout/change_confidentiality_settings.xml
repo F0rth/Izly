@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/change_confidentiality_settings_tv_choose_info" style="@style/Izly.TextView_Title.Blue.Header" />
+            <LinearLayout style="@style/Izly.Confidentiality_layout">
+                <TextView android:text="@string/change_confidentiality_settings_tv_firstname_lastname" style="@style/Izly.TextView_grey" />
+                <Button android:id="@id/sp_firstname_lastname" style="@style/Smoney.ChangeConfidentialitySettings.Selector.Spinner" />
+            </LinearLayout>
+            <View style="@style/Izly.divider" />
+            <LinearLayout android:visibility="visible" style="@style/Izly.Confidentiality_layout">
+                <TextView android:text="@string/change_confidentiality_settings_tv_nickname" style="@style/Izly.TextView_grey" />
+                <Button android:id="@id/sp_nickname" style="@style/Smoney.ChangeConfidentialitySettings.Selector.Spinner" />
+            </LinearLayout>
+            <View style="@style/Izly.divider" />
+            <LinearLayout style="@style/Izly.Confidentiality_layout">
+                <TextView android:text="@string/change_confidentiality_settings_tv_photo" style="@style/Izly.TextView_grey" />
+                <Button android:id="@id/sp_photo" style="@style/Smoney.ChangeConfidentialitySettings.Selector.Spinner" />
+            </LinearLayout>
+            <View style="@style/Izly.divider" />
+            <LinearLayout style="@style/Izly.Confidentiality_layout">
+                <TextView android:text="@string/change_confidentiality_settings_tv_mobile" style="@style/Izly.TextView_grey" />
+                <Button android:id="@id/sp_mobile" style="@style/Smoney.ChangeConfidentialitySettings.Selector.Spinner" />
+            </LinearLayout>
+            <View style="@style/Izly.divider" />
+            <LinearLayout style="@style/Izly.Confidentiality_layout">
+                <TextView android:text="@string/change_confidentiality_settings_tv_email" style="@style/Izly.TextView_grey" />
+                <Button android:id="@id/sp_email" style="@style/Smoney.ChangeConfidentialitySettings.Selector.Spinner" />
+            </LinearLayout>
+            <View style="@style/Izly.divider" />
+            <LinearLayout style="@style/Izly.Confidentiality_layout">
+                <TextView android:text="@string/change_confidentiality_settings_tv_address" style="@style/Izly.TextView_grey" />
+                <Button android:id="@id/sp_address" style="@style/Smoney.ChangeConfidentialitySettings.Selector.Spinner" />
+            </LinearLayout>
+            <View style="@style/Izly.divider" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/pict_info" />
+                <TextView android:text="@string/change_confidentiality_settings_tv_config_info" style="@style/Izly.TextView_grey" />
+            </LinearLayout>
+            <Button android:id="@id/b_modify" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/change_confidentiality_settings_b_modify" style="@style/Smoney.Button.Blue" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listP2PGet" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/emptyP2PGet" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_p2p_get_big_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xxlarge_margin" android:layout_marginBottom="@dimen/xlarge_margin" android:src="@drawable/placeholder_demandes" />
+        <TextView android:gravity="center" android:id="@id/hwtv_p2p_get_big_info" android:text="@string/p2p_get_list_empty_string" style="@style/Izly.TextView_greydark" />
+    </LinearLayout>
+</LinearLayout>

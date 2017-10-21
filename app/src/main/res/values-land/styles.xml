@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GreenDroid.Widget.QuickAction.Grid" parent="@style/GreenDroid.Widget.QuickAction">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/gd_quick_action_grid_bg</item>
+        <item name="android:padding">7.0dip</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:listSelector">@drawable/gd_quick_action_grid_selector</item>
+        <item name="android:verticalSpacing">7.0dip</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:numColumns">5</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">center</item>
+    </style>
+</resources>

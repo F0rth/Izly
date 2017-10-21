@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/toolbar" layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/view_empty_event_city" />
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/loader" android:background="@drawable/wingit_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="my_account_contact_details_ib_background_focused">#fff79719</item>
+    <item type="drawable" name="my_account_contact_details_ib_background_pressed">#fff28a1e</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+</resources>

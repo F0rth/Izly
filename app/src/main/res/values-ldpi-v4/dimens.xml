@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="block_line_min_height">40.0dip</dimen>
+    <dimen name="item_menu_account">90.0dip</dimen>
+    <dimen name="qr_size">300.0dip</dimen>
+    <dimen name="tab_height">50.0dip</dimen>
+    <dimen name="text_tab_size">17.0sp</dimen>
+    <dimen name="home_small_item_text_size">8.0sp</dimen>
+    <dimen name="home_small_layout_margin">5.0dip</dimen>
+    <dimen name="p2p_get_choice_ll_padding">5.0dip</dimen>
+    <dimen name="p2p_get_choice_rl_padding">5.0dip</dimen>
+    <dimen name="home_center_layout_padding_top">1.0dip</dimen>
+    <dimen name="home_general_item_height">110.0dip</dimen>
+    <dimen name="home_general_item_width">132.0dip</dimen>
+    <dimen name="home_secundary_item_height">74.0dip</dimen>
+    <dimen name="home_secundary_item_width">84.0dip</dimen>
+    <dimen name="home_sliding_drawer_content_height">130.0dip</dimen>
+    <dimen name="home_sliding_drawer_header_height">31.0dip</dimen>
+    <dimen name="home_small_item_height">74.0dip</dimen>
+    <dimen name="home_small_item_width">66.0dip</dimen>
+    <dimen name="contact_details_map_view_height">80.0dip</dimen>
+</resources>

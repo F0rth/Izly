@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/label" android:layout_marginBottom="5.0dip" app:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_greydark_large" />
+        <TextView android:id="@id/date" style="@style/Izly.TextView_grey_small" />
+    </LinearLayout>
+    <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="17.0sp" android:textColor="@color/izly_red" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:customFontPath="fonts/Roboto-Light.ttf" />
+</RelativeLayout>

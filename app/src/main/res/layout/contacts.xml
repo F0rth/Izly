@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lv_contacts" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@id/lv_favorites" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/iv_favorites_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xxlarge_margin" android:layout_marginBottom="@dimen/xlarge_margin" android:src="@drawable/my_account_contacts_iv_favorites_empty" />
+        <TextView android:gravity="center" android:text="@string/no_favorite" style="@style/Izly.TextView_greydark" />
+    </LinearLayout>
+</LinearLayout>

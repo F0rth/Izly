@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/cgu_smoney_banner_height" android:src="@drawable/good_deals_banner" android:scaleType="fitStart" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="@string/cgu_good_deals_title" style="@style/Izly.TextView_blue_large_light" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="@dimen/text_size_medium" android:id="@id/cgu_good_deals_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/double_margin" android:text="@string/cgu_good_deals_subtitle" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_greydark_medium" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="@dimen/text_size_standard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:text="@string/cgu_good_deals_desc" smoney:customFontPath="fonts/Roboto-Light.ttf" style="@style/Izly.TextView_grey" />
+        <RelativeLayout android:id="@id/smoney_offers_view" android:paddingTop="@dimen/double_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/smoney_offers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cgu_good_deals_smoney_offers" android:layout_toLeftOf="@id/smoney_offers_checkbox" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+            <CheckBox android:id="@id/smoney_offers_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:layout_below="@id/smoney_offers" style="@style/Izly.divider" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/smoney_partners_offers_view" android:paddingTop="@dimen/double_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/smoney_partners_offers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cgu_good_deals_smoney_partners_offers" android:layout_toLeftOf="@id/smoney_partners_offers_checkbox" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+            <CheckBox android:id="@id/smoney_partners_offers_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:layout_below="@id/smoney_partners_offers" style="@style/Izly.divider" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingTop="@dimen/double_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/cgu_smoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cgu_good_deals_cgu_smoney" android:layout_toLeftOf="@id/cgu_smoney_checkbox" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+            <CheckBox android:id="@id/cgu_smoney_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:layout_below="@id/cgu_smoney" style="@style/Izly.divider" />
+        </RelativeLayout>
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_gravity="center_horizontal" android:id="@id/more_info" android:padding="@dimen/default_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/cgu_good_deals_more_info" style="@style/Izly.TextView_info_light" />
+        <Button android:enabled="false" android:id="@id/btn_confirm" android:layout_marginTop="@dimen/default_margin" android:text="@string/cgu_good_deals_btn_label" style="@style/Izly.BlueButton" />
+    </LinearLayout>
+</ScrollView>

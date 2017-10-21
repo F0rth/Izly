@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin">
+            <TextView android:text="@string/verify_information" style="@style/Izly.TextView_Title.Blue.Header" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_network" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/cb_edit_tv_network" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/cb_edit_tv_hint" />
+            <EditText android:id="@id/et_alias" android:layout_margin="@dimen/activity_vertical_margin" android:hint="@string/cb_edit_title" style="@style/Izly.EditText_Grey" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:enabled="false" android:id="@id/b_submit" android:text="@string/cb_edit_b_submit" style="@style/Izly.BlueButton" />
+    </LinearLayout>
+</LinearLayout>

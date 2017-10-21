@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/izly_white" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/payment_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:src="@drawable/icon_carte_bancaire" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/payment_tv_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/payment_logo" android:layout_centerVertical="true">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/payment_title" style="@style/Izly.TextView_greydark_large" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/payment_desc" android:layout_marginRight="50.0dip" style="@style/Izly.TextView_grey" />
+    </LinearLayout>
+    <ImageView android:id="@id/payment_infos" android:padding="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_infos" android:layout_alignParentRight="true" />
+</RelativeLayout>

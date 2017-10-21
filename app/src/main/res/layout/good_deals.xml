@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/subscription_button_layout" android:background="@color/izly_white" android:paddingBottom="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/button_deals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/services_bons_plans_button" android:onClick="displaySubscriptionPage" style="@style/Izly.Deals_button" />
+        <Button android:id="@id/button_deals_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/services_bons_plans_share_button" android:onClick="shareDeals" style="@style/Izly.Deals_button_share" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/subscription_button_layout">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/title_deals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/image_deals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/title_deals" android:layout_centerHorizontal="true" />
+            <WebView android:gravity="center" android:id="@id/text_deals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/image_deals" />
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar android:id="@id/loadingPanelDeals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:minWidth="100.0dip" android:minHeight="100.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

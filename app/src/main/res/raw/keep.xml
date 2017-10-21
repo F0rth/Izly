@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@layout/com_ad4screen_sdk_*,
+    @anim/com_ad4screen_sdk_*,
+    @animator/com_ad4screen_sdk_*,
+    @drawable/com_ad4screen_sdk_*,
+    @values/com_ad4screen_sdk_*" />

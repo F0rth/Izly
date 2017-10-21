@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/good_deals_icon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_launcher" android:contentDescription="row" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/good_deals_label_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="4.0dip" android:text="text" android:layout_toRightOf="@id/good_deals_icon" />
+    <TextView android:textSize="13.0sp" android:id="@id/good_deals_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:minHeight="50.0dip" android:text="text" android:layout_toRightOf="@id/good_deals_icon" android:layout_below="@id/good_deals_label_title" />
+</RelativeLayout>

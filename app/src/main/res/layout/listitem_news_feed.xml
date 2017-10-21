@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/aiv_news_feed_recipient_photo" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_margin="@dimen/default_margin" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/aiv_news_feed_recipient_photo">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:layout_gravity="right" android:id="@id/tv_news_feed_date" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:singleLine="true" style="@style/Izly.TextView_grey_small" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_news_feed_message" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:maxLines="2" style="@style/Izly.TextView_greydark" />
+    </LinearLayout>
+    <View android:layout_below="@id/aiv_news_feed_recipient_photo" android:layout_alignParentBottom="true" style="@style/Izly.divider" />
+</RelativeLayout>

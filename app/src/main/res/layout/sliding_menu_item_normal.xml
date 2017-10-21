@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/izly_bg_menu_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/color_list_divider_grey_alpha" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:layout_gravity="center" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/menu_item_aiv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/pict_moneyout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textSize="15.0sp" android:textColor="@color/color_text_menu_item" android:ellipsize="end" android:id="@id/menu_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/menu_item_aiv" android:layout_centerVertical="true" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+        <FrameLayout android:id="@id/menu_item_fl_badge" android:visibility="invisible" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Smoney.Home.FrameLayout.Badge">
+            <TextView android:id="@id/menu_item_tv_badge_number" android:layout_marginBottom="1.0dip" style="@style/Smoney.Home.TextView.Badge" />
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:background="@color/color_list_divider_grey_alpha" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

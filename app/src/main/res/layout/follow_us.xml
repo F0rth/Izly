@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:smoney="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_smoney" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/follow_us_social_mark" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+        <fr.smoney.android.izly.ui.widget.CustomFontTextView android:id="@id/tv_contact_us" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/follow_us_social_advert" smoney:customFontPath="fonts/Roboto-Light.ttf" />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/rl_contact_facebook_like" android:background="@drawable/bg_round_corner_selection" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/follow_us_facebook" android:drawableLeft="@drawable/pict_fb" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/rl_contact_twitter_follow" android:background="@drawable/bg_round_corner_selection" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/follow_us_twitter" android:drawableLeft="@drawable/pict_twitter" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/rl_contact_read_blog" android:background="@drawable/bg_round_corner_selection" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/follow_us_blog" android:drawableLeft="@drawable/pict_smoney" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+</FrameLayout>

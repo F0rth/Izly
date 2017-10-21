@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:background="@drawable/bg_square_corner" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_user_photo" style="@style/Smoney.AsyncImageView.BigAvatar" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+                <TextView android:id="@id/tv_names" style="@style/Smoney.ConfirmResult.TextView.RecipientName" />
+                <TextView android:id="@id/tv_nickname" style="@style/Smoney.ConfirmResult.TextView.RecipientId" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwritten_area_margin_top" android:src="@drawable/arrow" />
+            <fr.smoney.android.izly.ui.widget.HandWrittenTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handwritten_informations" style="@style/Smoney.Generic.HandWrittenTextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_square_corner" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout style="@style/Smoney.SubscribeConfirm.LinearLayoutInfoSecundary">
+                <TextView android:text="@string/subscribe_confirm_label_phone_number" style="@style/Smoney.SubscribeConfirm.TextViewLabel" />
+                <TextView android:id="@id/tv_phone_number" style="@style/Smoney.ConfirmResult.TextView.Value" />
+            </LinearLayout>
+            <View style="@style/Smoney.ConfirmResult.View.Separator" />
+            <LinearLayout style="@style/Smoney.SubscribeConfirm.LinearLayoutInfoSecundary">
+                <TextView android:text="@string/subscribe_confirm_label_email_adress" style="@style/Smoney.SubscribeConfirm.TextViewLabel" />
+                <TextView android:id="@id/tv_mail_address" android:singleLine="true" style="@style/Smoney.ConfirmResult.TextView.Value" />
+            </LinearLayout>
+            <View style="@style/Smoney.ConfirmResult.View.Separator" />
+            <LinearLayout style="@style/Smoney.SubscribeConfirm.LinearLayoutInfoSecundary">
+                <TextView android:id="@id/tv_birth_date_label" style="@style/Smoney.SubscribeConfirm.TextViewLabel" />
+                <TextView android:id="@id/tv_birth_date" style="@style/Smoney.ConfirmResult.TextView.Value" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwritten_area_margin_top" android:src="@drawable/arrow" />
+            <fr.smoney.android.izly.ui.widget.HandWrittenTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/handwritten_security_question" style="@style/Smoney.Generic.HandWrittenTextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_square_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <TextView android:id="@id/tv_subscribe_confirm_secret_question" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View style="@style/Smoney.ConfirmResult.View.Separator" />
+            <TextView android:textColor="@color/general_tv_blue" android:id="@id/tv_subscribe_confirm_secret_answer" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fl_confirm" style="@style/Smoney.ConfirmResult.FrameLayout.ConfirmButton">
+            <Button android:id="@id/b_confirm_subscribe" style="@style/Smoney.ConfirmResult.Button.FullWidth.Confirm" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

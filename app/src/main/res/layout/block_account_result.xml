@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_picto_block_account" android:layout_width="fill_parent" android:layout_height="@dimen/picto_size" android:layout_marginTop="60.0dip" android:layout_marginBottom="40.0dip" android:src="@drawable/placeholder_check" android:scaleType="fitCenter" android:contentDescription="@string/block_account_result_tv_info" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/izly_grey_dark" android:gravity="center|top" android:id="@id/tv_list_empty_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:text="@string/block_account_result_tv_info" android:layout_below="@id/iv_picto_block_account" />
+    <Button android:id="@id/b_close" android:text="@string/root_detected_button_close" android:layout_alignParentBottom="true" style="@style/Izly.BlueButton" />
+</RelativeLayout>

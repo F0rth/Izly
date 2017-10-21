@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/confirm_result_tv_money_in_header" style="@style/Izly.TextView_Title.Blue.Header" />
+            <include android:id="@id/account_balance" layout="@layout/account_balance" />
+            <include layout="@layout/confirm_result_money_operation_info" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/amount" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/date" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_old_balance_value" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/confirm_result_tv_old_balance" />
+            <fr.smoney.android.izly.ui.widget.DetailTwoText android:id="@id/tv_new_balance_value" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftText="@string/confirm_result_tv_new_balance" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

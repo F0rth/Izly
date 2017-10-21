@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/p2p_get_choice_ll_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_p2p_get_choice_simple" android:background="@drawable/bg_type_demande" android:padding="@dimen/p2p_get_choice_rl_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_p2p_choice_s_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p2p_get_choice_simple" android:drawableTop="@drawable/picto_demande_simple" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center_horizontal" android:id="@id/tv_p2p_choice_s_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/p2p_get_choice_simple_description" android:layout_below="@id/tv_p2p_choice_s_title" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_p2p_get_choice_mult" android:background="@drawable/bg_type_demande" android:padding="@dimen/p2p_get_choice_rl_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_p2p_choice_m_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p2p_get_choice_mult" android:drawableTop="@drawable/picto_collecte" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center_horizontal" android:id="@id/tv_p2p_choice_m_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/p2p_get_choice_mult_description" android:layout_below="@id/tv_p2p_choice_m_title" />
+    </RelativeLayout>
+</LinearLayout>

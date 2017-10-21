@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f7f7" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/confirm_last" android:contentDescription="@string/content_description_congrat_finish_subscribe" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_square_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Smoney.CompleteSubscription.TextZoneInfo">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/pict_text_info" android:contentDescription="@string/content_description_none" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/complete_subscription_tv_complete_subscription_info" style="@style/Smoney.PhoneValidation.TextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/b_continue_to_smoney" android:text="@string/complete_subscription_b_continue_to_smoney" style="@style/Smoney.SelectAction.Button.Violet" />
+        <Button android:id="@id/b_complete_subscription" android:text="@string/complete_subscription_b_complete_subscription" style="@style/Smoney.SelectAction.Button.Grey" />
+    </LinearLayout>
+</LinearLayout>

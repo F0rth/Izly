@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/user_account" style="@style/Izly.TextView_Title.Blue.Header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/user_account_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/security_title" style="@style/Izly.TextView_Title.Blue.Header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/security_account_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <fr.smoney.android.izly.ui.widget.CustomFontTextView android:text="@string/other_information" style="@style/Izly.TextView_Title.Blue.Header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/other_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
